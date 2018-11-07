@@ -20,17 +20,28 @@ class CubDataset(Dataset):
         self.transform = transform
         self.is_train = is_train
         self.offset = offset
-        
+
         self.train_img_list, self.train_label_list, self.test_img_list, \
             self.test_label_list = generate_half_split_list(self.root_dir, self.image_txt, \
                                                             self.train_test_split_txt, \
                                                             self.label_txt, self.offset
                                                             )
-        # create a dummy training list
+        # shuffle training list
+        self.shuffle_list()
+
+        """
         merge_list = list(zip(self.train_img_list, self.train_label_list))
         random.shuffle(merge_list)
         self.train_img_list_dummy, self.train_label_list_dummy = tuple(zip(*merge_list))
-        
+        """
+
+    def shuffle_list(self):
+        """Shuflle the list"""
+        merge_list = list(zip(self.train_img_list, self.train_label_list))
+        random.shuffle(merge_list)
+        self.train_img_list_dummy, self.train_label_list_dummy = tuple(zip(*merge_list))
+        random.shuffle(merge_list)
+        self.train_img_list, self.train_label_list = tuple(zip(*merge_list))
 
     def __len__(self):
         if self.is_train:
@@ -42,15 +53,22 @@ class CubDataset(Dataset):
         if self.is_train:
             # Use PIL.Image to read image, and convert it to RGB
             img_1 = Image.open(self.train_img_list[idx]).convert('RGB')
-            label_1 = self.train_label_list[idx] 
-        
+            label_1 = self.train_label_list[idx]
+
             img_2 = Image.open(self.train_img_list_dummy[idx]).convert('RGB')
-            label_2 = self.train_label_list_dummy[idx] 
-            
+            label_2 = self.train_label_list_dummy[idx]
+
             if self.transform:
                 img_1, img_2 = self.transform(img_1), self.transform(img_2)
 
-            sample = {'img_1': img_1, 'img_2': img_2, 'sim_label': float(label_1 == label_2)}
+            # sample = {'img_1': img_1, 'img_2': img_2, 'sim_label': float(label_1 == label_2)}
+            sample = {'img_1': img_1, 'img_2': img_2, 'label_1': label_1, 'label_2': label_2}
+
+            # shulffe list for next round
+            if idx == self.__len__()-1:
+                self.shuffle_list()
+
+
         else:
             img = Image.open(self.test_img_list[idx]).convert('RGB')
             label = self.test_label_list[idx]
@@ -114,7 +132,7 @@ def generate_half_split_list(root_dir, image_txt, train_test_split_txt, label_tx
         else:
             print("The set is unclear")
             print(img_path, set_label, label)
-            continue 
+            continue
 
     # shuffle the training list
     merged_list = list(zip(train_img_list, train_label_list))
@@ -130,7 +148,7 @@ def generate_half_split_list(root_dir, image_txt, train_test_split_txt, label_tx
     return train_img_list, train_label_list, test_img_list, test_label_list
 
 
- 
+
 
 if __name__ == '__main__':
 
@@ -141,9 +159,9 @@ if __name__ == '__main__':
     image_txt ="/data1/Guoxian_Dai/CUB_200_2011/images.txt"
     train_test_split_txt ="/data1/Guoxian_Dai/CUB_200_2011/train_test_split.txt"
     label_txt ="/data1/Guoxian_Dai/CUB_200_2011/image_class_labels.txt"
-    
-    transform = transforms.Compose([transforms.Resize(299), 
-                                    transforms.CenterCrop(299), 
+
+    transform = transforms.Compose([transforms.Resize(299),
+                                    transforms.CenterCrop(299),
                                     transforms.ToTensor(),        # convert PIL Image (HWC, 0-255) to (CHW, 0-1)
                                     transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])]
                                   )
