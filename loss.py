@@ -1,10 +1,9 @@
 """
 This module is for contructing loss function.
 """
+import torch
 
-import torch 
-
-def calculate_distance_and_similariy_label(features, features_, labels, labels_, pair_type=None):
+def calculate_distance_and_similariy_label(features, features_, labels, labels_, sqrt=True, pair_type='vector'):
     """
     The calculate is based on following equations
      X: (N, M)
@@ -36,7 +35,6 @@ def calculate_distance_and_similariy_label(features, features_, labels, labels_,
         """
         elementwised operation.
         """
-        print(features.size())
         features_l2_norm = torch.sum(torch.pow(features, 2), dim=1, keepdim=True)
         return features_l2_norm
     # reshape label for convenience
@@ -44,7 +42,7 @@ def calculate_distance_and_similariy_label(features, features_, labels, labels_,
     if pair_type is None or pair_type == 'matrix':
 
         labels = labels.view(-1, 1)
-        labels_ = labels_.view(-1, 1) 
+        labels_ = labels_.view(-1, 1)
 
         # calcualte pairwise distance
         squared_features = get_squared_features(features)
@@ -60,17 +58,21 @@ def calculate_distance_and_similariy_label(features, features_, labels, labels_,
         tiled_labels_ = labels_.repeat(num_labels, 1)
 
 
-        pairwise_similarity_labels = torch.eq(tiled_labels.view(-1), tiled_labels_.view(-1)).type(torch.FloatTensor)
+        # pairwise_similarity_labels = torch.eq(tiled_labels.view(-1), tiled_labels_.view(-1)).type(torch.cuda.FloatTensor)
+        pairwise_similarity_labels = torch.eq(tiled_labels.view(-1), tiled_labels_.view(-1))
         pairwise_similarity_labels = pairwise_similarity_labels.view(num_labels, num_labels_)
 
-        return pairwise_distances, pairwise_similarity_labels
 
     elif pair_type == 'vector':
 
         pairwise_distances = torch.sum(torch.pow(features-features_, 2), dim=1)
-        pairwise_similarity_labels = torch.eq(labels, labels_).dtype(torch.FloatTensor)
+        pairwise_similarity_labels = torch.eq(labels, labels_)
 
-        return pairwise_distances, pairwise_similarity_labels
+    if sqrt:
+        # return the sqrt(distance)
+        pairwise_distances = torch.sqrt(pairwise_distances + 1e-8) # To make sure the training is stable.
+
+    return pairwise_distances, pairwise_similarity_labels.type(torch.cuda.FloatTensor)
 
 
 def contrastive_loss(pairwise_distances, pairwise_similarity_labels, margin):
@@ -79,11 +81,11 @@ def contrastive_loss(pairwise_distances, pairwise_similarity_labels, margin):
     """
 
     # positive pair loss
-    positive_pair_loss = pairwise_distances * pairwise_similarity_labels
+    positive_pair_loss = torch.pow(pairwise_distances, 2) * pairwise_similarity_labels
     positive_pair_loss = torch.mean(positive_pair_loss)
 
     # negative pair loss
-    negative_pair_loss = (1. - pairwise_similarity_labels) * torch.clamp(margin - pairwise_distances, 0.0)
+    negative_pair_loss = (1. - pairwise_similarity_labels) * torch.pow(torch.clamp(margin - pairwise_distances, 0.0), 2)
     negative_pair_loss = torch.mean(negative_pair_loss)
 
     loss = positive_pair_loss + negative_pair_loss
@@ -95,7 +97,7 @@ if __name__ == '__main__':
     label_1 = torch.randn(10)
     feature_2 = torch.randn(12, 5)
     label_2 = torch.randn(12)
-    pair_dist, pair_sim_label = calculate_distance_and_similariy_label(feature_1, feature_2, label_1, label_2) 
+    pair_dist, pair_sim_label = calculate_distance_and_similariy_label(feature_1, feature_2, label_1, label_2)
     print(pair_dist.size(), pair_sim_label.size())
     loss = contrastive_loss(pair_dist, pair_sim_label, 1.)
     print(loss.item())
