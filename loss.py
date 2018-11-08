@@ -92,6 +92,26 @@ def contrastive_loss(pairwise_distances, pairwise_similarity_labels, margin):
 
     return loss
 
+
+def focal_contrastive_loss(pairwise_distances, pairwise_similarity_labels, margin):
+
+    def linear_transform(x, mean=0.5, std=2.):
+        return (x - mean) / std
+
+    positive_factor = 2. * torch.sigmoid(linear_transform(pairwise_distances))
+    positive_pair_loss = torch.mean(positive_factor * torch.pow(pairwise_distances, 2) * pairwise_similarity_labels)
+
+    negative_distances = torch.clamp(margin-pairwise_distances, 0.0)
+
+    negative_factor = 2. * torch.sigmoid(linear_transform(negative_distances))
+
+    negative_pair_loss = torch.mean(negative_factor * (1. - pairwise_similarity_labels) *\
+            torch.pow(negative_distances, 2))
+
+    loss = positive_pair_loss +  negative_pair_loss
+
+    return loss
+
 if __name__ == '__main__':
     feature_1 = torch.randn(10, 5)
     label_1 = torch.randn(10)
