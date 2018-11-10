@@ -13,12 +13,8 @@ import evaluate_clustering
 
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 from torchvision import models, datasets, transforms
-
-
-
-
-
 
 class SiameseNetwork(nn.Module):
     def __init__(self, **kargs):
@@ -29,24 +25,53 @@ class SiameseNetwork(nn.Module):
         self.inception_v3.load_state_dict(torch.load('inception_v3_no_aux_logits.pth'))
         self.inception_v3.fc = nn.Linear(2048, 1000)
         self.main = nn.Sequential(
-            nn.Linear(1000, 512),
+            nn.Linear(1000, kargs['embedding_size'])
+        )
+        print(kargs["embedding_size"])
+
+        """
+        self.main = nn.Sequential(
             nn.ReLU(),
+            nn.Dropout(),
+            nn.Linear(1000, 512),
             nn.Linear(512, 64)
         )
+        """
+
+
+        # init weights 
+        # self.inception_v3.fc.weight.data.copy_(self.weight_init(self.inception_v3.fc, stddev=0.01))
+        #  self.main[1].weight.data.copy_(self.weight_init(self.main[1], stddev=0.01))
+        """
+        self.main[3].weight.data.copy_(self.weight_init(self.main[3], stddev=0.1))
+        """
+
         # self.weight_init()
 
-    def weight_init(self):
+    def weight_init(self, m, stddev=0.1):
+        import scipy.stats as stats
+        stddev = stddev
+        X = stats.truncnorm(-2, 2, scale=stddev)
+        values = torch.Tensor(X.rvs(m.weight.numel()))
+        values = values.view(m.weight.size())
+        return values
 
+        """
+        m.weight.data.copy_(values)
         self.inception_v3.fc.weight.data.normal_(mean=0, std=10)
-        self.inception_v3.fc.bias.data = torch.zeros(1000)
         self.main[0].weight.data.normal_(mean=0, std=10)
         self.main[0].bias.data = torch.zeros(512)
         self.main[2].weight.data.normal_(mean=0, std=10)
         self.main[2].bias.data = torch.zeros(64)
+        """
 
     def forward_once(self, x):
         logits = self.inception_v3(x)
         outputs = self.main(logits)
+        return outputs
+
+    def forward_once_2(self, x):
+        outputs = self.inception_v3(x)
         return outputs
 
     def forward(self, input1, input2):
@@ -69,18 +94,6 @@ class ContrastiveLoss(nn.Module):
         contrastive_loss = torch.mean(positive_dist + negative_dist)
 
         return contrastive_loss
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # This is an example for weight initialization.

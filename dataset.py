@@ -28,7 +28,11 @@ class CubDataset(Dataset):
                                                             )
         # shuffle training list
         self.shuffle_list()
+        print("len(self.train_img_list) = {:5d}".format(len(self.train_img_list)))
+        print("len(self.train_label_list) = {:5d}".format(len(self.train_label_list)))
 
+        print("len(self.test_img_list) = {:5d}".format(len(self.test_img_list)))
+        print("len(self.test_label_list) = {:5d}".format(len(self.test_label_list)))
         """
         merge_list = list(zip(self.train_img_list, self.train_label_list))
         random.shuffle(merge_list)
@@ -61,7 +65,6 @@ class CubDataset(Dataset):
             if self.transform:
                 img_1, img_2 = self.transform(img_1), self.transform(img_2)
 
-            # sample = {'img_1': img_1, 'img_2': img_2, 'sim_label': float(label_1 == label_2)}
             sample = {'img_1': img_1, 'img_2': img_2, 'label_1': label_1, 'label_2': label_2}
 
             # shulffe list for next round
@@ -148,11 +151,107 @@ def generate_half_split_list(root_dir, image_txt, train_test_split_txt, label_tx
     return train_img_list, train_label_list, test_img_list, test_label_list
 
 
+class OnlineProductDataset(Dataset):
+    """
+    This is a customized dataset for CUB 200.
+    """
+    def __init__(self, root_dir, train_txt, test_txt, transform=None, is_train=True, offset=1):
+        self.root_dir = root_dir # root directory of data
+        self.train_txt = train_txt # dataset info txt
+        self.test_txt = test_txt
+        self.transform = transform
+        self.is_train = is_train
+        self.offset = offset
+
+        self.get_train_test_split()
+
+        # shuffle training list
+        self.shuffle_list()
+
+        """
+        merge_list = list(zip(self.train_img_list, self.train_label_list))
+        random.shuffle(merge_list)
+        self.train_img_list_dummy, self.train_label_list_dummy = tuple(zip(*merge_list))
+        """
+    def get_train_test_split(self):
+        self.train_img_list = []
+        self.train_label_list = []
+        self.test_img_list = []
+        self.test_label_list = []
+        # process training dataset.
+        with open(self.train_txt, 'r') as fid:
+            line = fid.readline()
+            for line in fid:
+                line = line.split(' ')
+                img_path = os.path.join(self.root_dir, line[3].rstrip('\n'))
+                # make sure label start from 0
+                img_label = int(line[1]) - 1
+                self.train_img_list.append(img_path)
+                self.train_label_list.append(img_label)
+        # process testing dataset.
+        with open(self.test_txt, 'r') as fid:
+            line = fid.readline()
+            for line in fid:
+                line = line.split(' ')
+                img_path = os.path.join(self.root_dir, line[3].rstrip('\n'))
+                # make sure label start from 0
+                img_label = int(line[1]) - 11319
+                self.test_img_list.append(img_path)
+                self.test_label_list.append(img_label)
+
+
+
+    def shuffle_list(self):
+        """Shuflle the list"""
+        merge_list = list(zip(self.train_img_list, self.train_label_list))
+        random.shuffle(merge_list)
+        self.train_img_list_dummy, self.train_label_list_dummy = tuple(zip(*merge_list))
+        random.shuffle(merge_list)
+        self.train_img_list, self.train_label_list = tuple(zip(*merge_list))
+
+    def __len__(self):
+        if self.is_train:
+            return len(self.train_img_list)
+        else:
+            return len(self.test_img_list)
+
+    def __getitem__(self, idx):
+        if self.is_train:
+            # Use PIL.Image to read image, and convert it to RGB
+            img_1 = Image.open(self.train_img_list[idx]).convert('RGB')
+            label_1 = self.train_label_list[idx]
+
+            img_2 = Image.open(self.train_img_list_dummy[idx]).convert('RGB')
+            label_2 = self.train_label_list_dummy[idx]
+
+            if self.transform:
+                img_1, img_2 = self.transform(img_1), self.transform(img_2)
+
+            # sample = {'img_1': img_1, 'img_2': img_2, 'sim_label': float(label_1 == label_2)}
+            sample = {'img_1': img_1, 'img_2': img_2, 'label_1': label_1, 'label_2': label_2}
+
+            # shulffe list for next round
+            if idx == self.__len__()-1:
+                self.shuffle_list()
+
+
+        else:
+            img = Image.open(self.test_img_list[idx]).convert('RGB')
+            label = self.test_label_list[idx]
+            if self.transform:
+                img = self.transform(img)
+
+            sample = {'img': img, 'label': label}
+
+        return sample
+
 
 
 if __name__ == '__main__':
 
     import os
+    """
+    # test cub dataset
     os.environ['CUDA_VISIBLE_DEVICES'] = '1'
     batch_size = 100
     root_dir ="/data1/Guoxian_Dai/CUB_200_2011/images"
@@ -175,7 +274,33 @@ if __name__ == '__main__':
         print(sample['img'].size())
         print(sample['label'].size())
     """
-    print(sample['img_1'].size())
-    print(sample['img_2'].numpy().shape)
-    print(sample['sim_label'].size())
-    """
+    # test online product dataset
+    os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+    batch_size = 100
+    root_dir ="/data/Guoxian_Dai/Stanford_Online_Products"
+    train_txt ="/data/Guoxian_Dai/Stanford_Online_Products/Ebay_train.txt"
+    test_txt ="/data/Guoxian_Dai/Stanford_Online_Products/Ebay_test.txt"
+
+    transform = transforms.Compose([transforms.Resize((299, 299)),
+                                    transforms.CenterCrop(299),
+                                    transforms.ToTensor(),        # convert PIL Image (HWC, 0-255) to (CHW, 0-1)
+                                    transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])]
+                                  )
+    online_product = OnlineProductDataset(root_dir, train_txt, test_txt, transform=transform, is_train=False, offset=1)
+    print("training image, label length = {:6d}, {:6d}".format(len(online_product.train_img_list), len(online_product.train_label_list)))
+    print("Sample data:\n")
+    # zip() return an iterator (it is not subscrible)
+    print(list(zip(online_product.train_img_list, online_product.train_label_list))[:5])
+    print('\n\n')
+    print("testing image, label length = {:6d}, {:6d}".format(len(online_product.test_img_list), len(online_product.test_label_list)))
+    print("Sample data:\n")
+    print(list(zip(online_product.test_img_list, online_product.test_label_list))[:5])
+    print('\n\n')
+    dataloader = DataLoader(dataset=online_product, batch_size=64, shuffle=True, num_workers=4)
+    iters = iter(dataloader)
+    for _ in range(10):
+        sample = next(iters)
+        # sample = next(iter(cub_dataset))
+        print(type(sample))
+        print(sample['img'].size())
+        print(sample['label'].size())

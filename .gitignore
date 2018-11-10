@@ -3,3 +3,5 @@ weights/
 checkpoint/
 logdir/
 *pth
+*.out
+*.txt

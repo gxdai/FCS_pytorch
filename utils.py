@@ -14,3 +14,13 @@ def progress_bar(total_width):
         sys.stdout.flush()
 
     sys.stdout.write("\n")
+
+def get_parameter_group(model):
+    """Separate parameters into different groups."""
+    all_params = list(model.parameters())
+    print("all parameter #: {}".format(len(all_params)))
+    fc_params = list(model.fc.parameters())
+    print("fc parameter #: {}".format(len(fc_params)))
+    base_params = [param for param in all_params if param not in fc_params]
+    print("base parameter #: {}".format(len(base_params)))
+    return fc_params, base_params
