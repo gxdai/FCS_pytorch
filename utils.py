@@ -1,5 +1,7 @@
 import time
 import sys
+import torch.optim as optim
+import torch
 
 def progress_bar(total_width):
 
@@ -24,3 +26,26 @@ def get_parameter_group(model):
     base_params = [param for param in all_params if param not in fc_params]
     print("base parameter #: {}".format(len(base_params)))
     return fc_params, base_params
+
+
+def configure_optimizer(param_lr_list, optimizer):
+    """This is configure different optimizer.
+    """
+    gpu_number = torch.cuda.device_count()
+
+    if optimizer == 'rmsprop':
+        optimizer = optim.RMSprop(param_lr_list, lr=0.001)
+    elif optimizer == 'sgd':
+        optimizer = optim.SGD(param_lr_list, lr=0.001, momentum=0.9)
+ 
+    return optimizer
+
+
+
+
+
+
+
+
+
+
