@@ -18,16 +18,32 @@ from torchvision import models, datasets, transforms
 
 class SiameseNetwork(nn.Module):
     def __init__(self, **kargs):
+        # init base class
+        # in python3 
+        # super() could help you avoid base class explicitly.
+        """
+        
+        super(Child, self).__init__() ---->>>> super().__init__()
+        """
         super(SiameseNetwork, self).__init__()
         self.ngpu = kargs['ngpu']
         self.inception_v3 = models.inception_v3(pretrained=kargs['pretrained'],
                                                 aux_logits=kargs['aux_logits'])
         self.inception_v3.load_state_dict(torch.load('inception_v3_no_aux_logits.pth'))
+        # remove last layer
         self.inception_v3.fc = nn.Linear(2048, 1000)
         self.main = nn.Sequential(
             nn.Linear(1000, kargs['embedding_size'])
         )
         print(kargs["embedding_size"])
+        """
+        self.inception_v3.fc = nn.Linear(2048, 1000)
+        self.main = nn.Sequential(
+            nn.Linear(1000, kargs['embedding_size'])
+        )
+        print(kargs["embedding_size"])
+        """
+
 
         """
         self.main = nn.Sequential(
@@ -47,6 +63,18 @@ class SiameseNetwork(nn.Module):
         """
 
         # self.weight_init()
+    
+    def separate_parameter_group(self):
+        """Separate parameters into different groups."""
+        first_group = []
+        second_group = []
+        for name, param in self.named_parameters():
+            if "inception_v3.fc" in name or "main.0" in name:
+                second_group.append(param)
+            else:
+                first_group.append(param) 
+
+        return first_group, second_group
 
     def weight_init(self, m, stddev=0.1):
         import scipy.stats as stats
@@ -77,8 +105,8 @@ class SiameseNetwork(nn.Module):
     def forward(self, input1, input2):
         output_1 = self.forward_once(input1)
         output_2 = self.forward_once(input2)
-        return output_1, output_2
 
+        return output_1, output_2
 
 
 class ContrastiveLoss(nn.Module):

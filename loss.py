@@ -82,11 +82,9 @@ def contrastive_loss(pairwise_distances, pairwise_similarity_labels, margin=1):
 
     # positive pair loss
     positive_pair_loss = torch.pow(pairwise_distances, 2) * pairwise_similarity_labels
-    print(positive_pair_loss.size())
     positive_pair_loss = torch.mean(positive_pair_loss)
     # negative pair loss
     negative_pair_loss = (1. - pairwise_similarity_labels) * torch.pow(torch.clamp(margin - pairwise_distances, 0.0), 2)
-    print(negative_pair_loss.size())
     negative_pair_loss = torch.mean(negative_pair_loss)
 
     loss = positive_pair_loss + negative_pair_loss

@@ -16,7 +16,7 @@ from dataset import CubDataset, OnlineProductDataset
 from loss import calculate_distance_and_similariy_label, contrastive_loss, focal_contrastive_loss
 from torch.utils.data import DataLoader
 from evaluation import  get_feature_and_label, evaluation
-from utils import get_parameter_group
+from utils import get_parameter_group, configure_optimizer
 
 import datetime
 
@@ -99,8 +99,13 @@ def train(args):
     test_batch_size = args.test_batch_size
     gamma = args.gamma # for learning rate decay
     learning_rate = args.learning_rate
+    learning_rate2 = args.learning_rate2
+
+
     loss_type = args.loss_type
     dataset_name = args.dataset_name
+    pair_type = args.pair_type
+    print("pair_type = {}".format(pair_type))
 
     root_dir = args.root_dir
     image_txt = args.image_txt
@@ -123,6 +128,22 @@ def train(args):
         os.makedirs(model_dir)
     # network and loss
     siamese_network = SiameseNetwork(**kargs)
+
+    # print parameters
+    counter = 0
+    for name, param in siamese_network.named_parameters():
+        print(name, param.size())
+        counter += 1
+   
+    first_group, second_group = siamese_network.separate_parameter_group()
+
+    print(len(first_group))
+    print(len(second_group))
+    param_lr_dict = [
+               {'params': first_group, 'lr': learning_rate2},
+               {'params': second_group, 'lr': learning_rate}
+              ]
+
     gpu_number = torch.cuda.device_count()
     if device.type == 'cuda' and gpu_number > 1:
         siamese_network = nn.DataParallel(siamese_network, list(range(torch.cuda.device_count())))
@@ -131,26 +152,14 @@ def train(args):
     # contrastive_loss = ContrastiveLoss(margin=margin)
 
     # params = siamese_network.parameters()
-    """
-    optimizer = optim.Adam([
-                       {'params': siamese_network.module.inception_v3.parameters() if gpu_number > 1 else siamese_network.inception_v3.parameters()},
-                       {'params': siamese_network.module.main.parameters() if gpu_number > 1 else siamese_network.main.parameters(), 'lr': 0.0005}
-                      ], lr=0.00005)
-    """
-    optimizer = optim.SGD([
-                       {'params': siamese_network.module.inception_v3.parameters() if gpu_number > 1 else siamese_network.inception_v3.parameters()},
-                       {'params': siamese_network.module.main.parameters() if gpu_number > 1 else siamese_network.main.parameters(), 'lr': 1e-3}
-                      ], lr=1e-4, momentum=0.9) 
-
-
-
-    # optimizer = optim.SGD(params, lr=0.01, momentum=0.9)
+    
+    print("args.optimizer = {:10s}".format(args.optimizer))
+    print("learning_rate = {:5.5f}".format(learning_rate))
+    print("learning_rate2 = {:5.5f}".format(learning_rate2))
+    optimizer = configure_optimizer(param_lr_dict, optimizer=args.optimizer)
 
     # using different lr
-    print("learning_rate = {:5.3f}".format(learning_rate))
-
-
-    scheduler = optim.lr_scheduler.ExponentialLR(optimizer, gamma=gamma, last_epoch=-1)
+    # scheduler = optim.lr_scheduler.ExponentialLR(optimizer, gamma=gamma, last_epoch=-1)
 
 
     transform = transforms.Compose([transforms.Resize((299, 299)),
@@ -184,7 +193,7 @@ def train(args):
             img_1, img_2, label_1, label_2 = data['img_1'].to(device), data['img_2'].to(device), data['label_1'].to(device), data['label_2'].to(device)
             optimizer.zero_grad()
             output_1, output_2 = siamese_network(img_1, img_2)
-            pair_dist, pair_sim_label = calculate_distance_and_similariy_label(output_1, output_2, label_1, label_2, sqrt=True, pair_type="matrix")
+            pair_dist, pair_sim_label = calculate_distance_and_similariy_label(output_1, output_2, label_1, label_2, sqrt=True, pair_type=pair_type)
             if loss_type == "contrastive_loss":
                 loss, positive_loss, negative_loss = contrastive_loss(pair_dist, pair_sim_label, margin)
             elif loss_type == "focal_contrastive_loss":
