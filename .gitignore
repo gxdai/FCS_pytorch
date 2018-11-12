@@ -1,3 +1,4 @@
+**/logdir
 __pycache__/
 weights/
 checkpoint/
