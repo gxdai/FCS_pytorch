@@ -5,6 +5,101 @@ from torchvision import transforms, utils
 from torch.utils.data import Dataset, DataLoader
 import random
 from PIL import Image
+import scipy.io as io
+
+class CarDataset(Dataset):
+    """
+    This is a customized dataset for CUB 200.
+    """
+    def __init__(self, root_dir, image_info_mat, transform=None, is_train=True, offset=1):
+        self.root_dir = root_dir
+        self.image_info_mat = image_info_mat
+
+        self.transform = transform
+        self.is_train = is_train
+        self.offset = offset
+
+        self.train_img_list, self.train_label_list, self.test_img_list, \
+            self.test_label_list = self.generate_split_list()
+        # shuffle training list
+        self.shuffle_list()
+        print("len(self.train_img_list) = {:5d}".format(len(self.train_img_list)))
+        print("len(self.train_label_list) = {:5d}".format(len(self.train_label_list)))
+
+        print("len(self.test_img_list) = {:5d}".format(len(self.test_img_list)))
+        print("len(self.test_label_list) = {:5d}".format(len(self.test_label_list)))
+        """
+        merge_list = list(zip(self.train_img_list, self.train_label_list))
+        random.shuffle(merge_list)
+        self.train_img_list_dummy, self.train_label_list_dummy = tuple(zip(*merge_list))
+        """
+
+    def generate_split_list(self):
+        # load mat data
+        label_set = io.loadmat(self.image_info_mat)
+        label_set = label_set['annotations'][0]
+        # get total number of data
+        total_num = label_set.size
+        train_img_list = []
+        train_label_list = []
+        test_img_list = []
+        test_label_list = []
+        for i in range(total_num):
+            path = os.path.join(self.root_dir, label_set[i][0][0])
+            label = label_set[i][5][0][0]
+            if i < 8054:
+                train_img_list.append(path)
+                train_label_list.append(label-1)
+            else:
+                test_img_list.append(path)
+                test_label_list.append(label-99)
+
+        return train_img_list, train_label_list, test_img_list, test_label_list
+
+
+    def shuffle_list(self):
+        """Shuflle the list"""
+        merge_list = list(zip(self.train_img_list, self.train_label_list))
+        random.shuffle(merge_list)
+        self.train_img_list_dummy, self.train_label_list_dummy = tuple(zip(*merge_list))
+        random.shuffle(merge_list)
+        self.train_img_list, self.train_label_list = tuple(zip(*merge_list))
+
+    def __len__(self):
+        if self.is_train:
+            return len(self.train_img_list)
+        else:
+            return len(self.test_img_list)
+
+    def __getitem__(self, idx):
+        if self.is_train:
+            # Use PIL.Image to read image, and convert it to RGB
+            img_1 = Image.open(self.train_img_list[idx]).convert('RGB')
+            label_1 = self.train_label_list[idx]
+
+            img_2 = Image.open(self.train_img_list_dummy[idx]).convert('RGB')
+            label_2 = self.train_label_list_dummy[idx]
+
+            if self.transform:
+                img_1, img_2 = self.transform(img_1), self.transform(img_2)
+
+            sample = {'img_1': img_1, 'img_2': img_2, 'label_1': label_1, 'label_2': label_2}
+
+            # shulffe list for next round
+            if idx == self.__len__()-1:
+                self.shuffle_list()
+
+
+        else:
+            img = Image.open(self.test_img_list[idx]).convert('RGB')
+            label = self.test_label_list[idx]
+            if self.transform:
+                img = self.transform(img)
+
+            # sample = {'img': img, 'label': label}
+            sample = {'img': img, 'label': label, 'path': self.test_img_list[idx]}
+
+        return sample
 
 
 
@@ -78,7 +173,7 @@ class CubDataset(Dataset):
             if self.transform:
                 img = self.transform(img)
 
-            sample = {'img': img, 'label': label}
+            sample = {'img': img, 'label': label, 'path': self.test_img_list[idx]}
 
         return sample
 
@@ -273,7 +368,6 @@ if __name__ == '__main__':
         print(type(sample))
         print(sample['img'].size())
         print(sample['label'].size())
-    """
     # test online product dataset
     os.environ['CUDA_VISIBLE_DEVICES'] = '1'
     batch_size = 100
@@ -297,6 +391,36 @@ if __name__ == '__main__':
     print(list(zip(online_product.test_img_list, online_product.test_label_list))[:5])
     print('\n\n')
     dataloader = DataLoader(dataset=online_product, batch_size=64, shuffle=True, num_workers=4)
+    iters = iter(dataloader)
+    for _ in range(10):
+        sample = next(iters)
+        # sample = next(iter(cub_dataset))
+        print(type(sample))
+        print(sample['img'].size())
+        print(sample['label'].size())
+    """
+
+    os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+    batch_size = 100
+    root_dir ="/data1/Guoxian_Dai/car196"
+    image_info_mat ="/data1/Guoxian_Dai/car196/cars_annos.mat"
+
+    transform = transforms.Compose([transforms.Resize((299, 299)),
+                                    transforms.CenterCrop(299),
+                                    transforms.ToTensor(),        # convert PIL Image (HWC, 0-255) to (CHW, 0-1)
+                                    transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])]
+                                  )
+    car_dataset = CarDataset(root_dir, image_info_mat, transform=transform, is_train=False, offset=1)
+    print("training image, label length = {:6d}, {:6d}".format(len(car_dataset.train_img_list), len(car_dataset.train_label_list)))
+    print("Sample data:\n")
+    # zip() return an iterator (it is not subscrible)
+    print(list(zip(car_dataset.train_img_list, car_dataset.train_label_list))[:5])
+    print('\n\n')
+    print("testing image, label length = {:6d}, {:6d}".format(len(car_dataset.test_img_list), len(car_dataset.test_label_list)))
+    print("Sample data:\n")
+    print(list(zip(car_dataset.test_img_list, car_dataset.test_label_list))[:5])
+    print('\n\n')
+    dataloader = DataLoader(dataset=car_dataset, batch_size=64, shuffle=True, num_workers=4)
     iters = iter(dataloader)
     for _ in range(10):
         sample = next(iters)
