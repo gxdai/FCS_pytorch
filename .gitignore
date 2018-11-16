@@ -6,3 +6,10 @@ logdir/
 *pth
 *.out
 *.txt
+*.npy
+checkpoint/
+cub200_thumbnail/
+cub200_thumbnail_32/
+cub_results/
+\_\_pycache\_\_/
+tmp/
