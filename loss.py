@@ -3,6 +3,7 @@ This module is for contructing loss function.
 """
 import torch
 
+
 def calculate_distance_and_similariy_label(features, features_, labels, labels_, sqrt=True, pair_type='vector'):
     """
     The calculate is based on following equations
@@ -74,6 +75,11 @@ def calculate_distance_and_similariy_label(features, features_, labels, labels_,
 
     return pairwise_distances, pairwise_similarity_labels.type(torch.cuda.FloatTensor)
 
+"""
+def linear_transform(x, mean_value=0.5, std_value=2.):
+    y = (x - mean_value) / std_value
+    return y
+"""
 
 def contrastive_loss(pairwise_distances, pairwise_similarity_labels, margin=1):
     """
@@ -92,18 +98,71 @@ def contrastive_loss(pairwise_distances, pairwise_similarity_labels, margin=1):
 
     return loss, positive_pair_loss, negative_pair_loss
 
+def triplet_loss(pairwise_distances, pairwise_similarity_labels, margin=1):
+    """Create the triplet loss."""
+    anchor_positive_distance = torch.unsqueeze(pairwise_distances, 2)
+    anchor_negative_distance = torch.unsqueeze(pairwise_distances, 1)
+    triplet_loss = margin + anchor_positive_distance - anchor_negative_distance
+    i_equal_j = torch.unsqueeze(pairwise_similarity_labels, 2)
+    j_equal_k = torch.unsqueeze(pairwise_similarity_labels, 1)
 
-def focal_contrastive_loss(pairwise_distances, pairwise_similarity_labels, margin):
+    mask = i_equal_j * (1 - j_equal_k)
+    effective_pair_num = torch.sum(mask)
 
-    def linear_transform(x, mean=0.5, std=2.):
-        return (x - mean) / std
+    # hinge loss
+    triplet_loss = torch.clamp(triplet_loss, 0.)
+    # apply mask
+    triplet_loss = triplet_loss * mask
+    # average loss
+    # triplet_loss = torch.sum(triplet_loss) / effective_pair_num
+    triplet_loss = 3.0 * torch.mean(triplet_loss)
 
-    positive_factor = 2. * torch.sigmoid(linear_transform(pairwise_distances))
+    return triplet_loss, triplet_loss, triplet_loss
+
+def focal_triplet_loss(pairwise_distances, pairwise_similarity_labels, margin=1, mean_value=0.5, std_value=2.0):
+
+    def linear_transform(x, mean_value=0.5, std_value=2.):
+        y = (x - mean_value) / std_value
+        return y
+
+
+
+    anchor_positive_distance = torch.unsqueeze(pairwise_distances, 2)
+    anchor_negative_distance = torch.unsqueeze(pairwise_distances, 1)
+    triplet_loss = margin + anchor_positive_distance - anchor_negative_distance
+    i_equal_j = torch.unsqueeze(pairwise_similarity_labels, 2)
+    j_equal_k = torch.unsqueeze(pairwise_similarity_labels, 1)
+
+    mask = i_equal_j * (1 - j_equal_k)
+    effective_pair_num = torch.sum(mask)
+
+    # hinge loss
+    triplet_loss = torch.clamp(triplet_loss, 0.)
+    # Get focal factor
+    factor = 2. * torch.sigmoid(linear_transform(triplet_loss, mean_value, std_value))
+
+    # apply mask and factor
+    triplet_loss = factor * triplet_loss * mask
+    # average loss
+    # triplet_loss = torch.sum(triplet_loss) / effective_pair_num
+    triplet_loss =  3.0 * torch.mean(triplet_loss)
+
+    return triplet_loss, triplet_loss, triplet_loss
+
+
+def focal_contrastive_loss(pairwise_distances, pairwise_similarity_labels, margin, mean_value=0.5, std_value=2.):
+
+    def linear_transform(x, mean_value=0.5, std_value=2.):
+        y = (x - mean_value) / std_value
+        return y
+
+
+    positive_factor = 2. * torch.sigmoid(linear_transform(pairwise_distances, mean_value, std_value))
     positive_pair_loss = torch.mean(positive_factor * torch.pow(pairwise_distances, 2) * pairwise_similarity_labels)
 
     negative_distances = torch.clamp(margin-pairwise_distances, 0.0)
 
-    negative_factor = 2. * torch.sigmoid(linear_transform(negative_distances))
+    negative_factor = 2. * torch.sigmoid(linear_transform(negative_distances, mean_value, std_value))
 
     negative_pair_loss = torch.mean(negative_factor * (1. - pairwise_similarity_labels) *\
             torch.pow(negative_distances, 2))
@@ -111,6 +170,7 @@ def focal_contrastive_loss(pairwise_distances, pairwise_similarity_labels, margi
     loss = positive_pair_loss +  negative_pair_loss
 
     return loss, positive_pair_loss, negative_pair_loss
+
 
 if __name__ == '__main__':
     feature_1 = torch.randn(10, 5)

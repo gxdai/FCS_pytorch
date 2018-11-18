@@ -2,6 +2,7 @@ import time
 import sys
 import torch.optim as optim
 import torch
+from PIL import Image
 
 def progress_bar(total_width):
 
@@ -37,15 +38,14 @@ def configure_optimizer(param_lr_list, optimizer):
         optimizer = optim.RMSprop(param_lr_list, lr=0.001)
     elif optimizer == 'sgd':
         optimizer = optim.SGD(param_lr_list, lr=0.001, momentum=0.9)
- 
+
     return optimizer
 
-
-
-
-
-
-
-
-
-
+def create_thumbnail_image(infile, outfile, size=(128, 128)):
+    """Given an input image, return a thumbnail image"""
+    try:
+        im = Image.open(infile)
+        im.thumbnail(size)
+        im.save(outfile, 'png')
+    except IOError:
+        print("cannot create thumbnail for {}".format(infile))

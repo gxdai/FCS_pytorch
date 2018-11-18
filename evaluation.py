@@ -12,22 +12,22 @@ def get_feature_and_label(model, dataloader, device):
     model.eval()
     feature_set = []
     label_set = []
+    path_set = []
     # no need for gradients calculation.
     with torch.no_grad():
         for data in dataloader:
-            img, label = data['img'].to(device), data['label'].to(device)
+            img, label, path = data['img'].to(device), data['label'].to(device), data['path']
             # output = model.forward_once(img)
             output, output_2 = model(img, img)
             feature_set.append(output.detach())
             label_set.append(label.detach())
+            path_set.extend(path)
 
     feature_set = torch.cat(feature_set, dim=0)
     label_set = torch.cat(label_set)
-    print(feature_set.size())
-    print(label_set.size())
 
-    return feature_set.cpu().numpy(), label_set.cpu().numpy()
- 
+    return feature_set.cpu().numpy(), label_set.cpu().numpy(), path_set
+
 
 def evaluation(feature_set, label_set, k_set=[1, 2, 4, 8, 16, 32]):
     distM = distance.cdist(feature_set, feature_set)
@@ -50,4 +50,8 @@ def evaluation(feature_set, label_set, k_set=[1, 2, 4, 8, 16, 32]):
            'The E is {:5.5f}\nThe MAP {:5.5f}\n').format(
            nn_av, ft_av, st_av, dcg_av, e_av, map_))
 
+    rec = np.expand_dims(rec, axis=1)
+    pre = np.expand_dims(pre, axis=1)
 
+    rec_pre = np.concatenate([rec, pre], axis=1)
+    return rec_pre

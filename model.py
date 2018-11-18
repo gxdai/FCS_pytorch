@@ -31,6 +31,7 @@ class SiameseNetwork(nn.Module):
                                                 aux_logits=kargs['aux_logits'])
         self.inception_v3.load_state_dict(torch.load('inception_v3_no_aux_logits.pth'))
         # remove last layer
+        print("Init the last two layers with normal distribution")
         self.inception_v3.fc = nn.Linear(2048, 1000)
         self.main = nn.Sequential(
             nn.Linear(1000, kargs['embedding_size'])
@@ -57,7 +58,7 @@ class SiameseNetwork(nn.Module):
 
         # init weights 
         # self.inception_v3.fc.weight.data.copy_(self.weight_init(self.inception_v3.fc, stddev=0.01))
-        #  self.main[1].weight.data.copy_(self.weight_init(self.main[1], stddev=0.01))
+        # self.main[0].weight.data.copy_(self.weight_init(self.main[0], stddev=0.01))
         """
         self.main[3].weight.data.copy_(self.weight_init(self.main[3], stddev=0.1))
         """
