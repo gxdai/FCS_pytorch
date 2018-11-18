@@ -1,5 +1,7 @@
 #!/bin/bash
 
+MANUAL_SEED=2222 
+
 # Bash arguments
 if [[ $# -eq 0 ]]; then
     GPU_ID=0
@@ -17,6 +19,12 @@ elif [[ $# -eq 3 ]]; then
     GPU_ID=$1
     LOSS_TYPE=$2
     DATASET_NAME=$3
+    STD_VALUE=2
+elif [[ $# -eq 4 ]]; then
+    GPU_ID=$1
+    LOSS_TYPE=$2
+    DATASET_NAME=$3
+    STD_VALUE=$4
 fi
 
 echo "Traing Info:"
@@ -45,8 +53,8 @@ if [ $(hostname) = 'dgx1' ];  then
 
 elif [ $(hostname) = 'aduae266-lap' ]; then
    # running code one nyu machine
-    ROOT_DIR="/home/gxdai/MMVC_LARGE2/Guoxian_Dai/data/cub_2011/CUB_200_2011/images"
-    IMAGE_TXT="/home/gxdai/MMVC_LARGE2/Guoxian_Dai/data/cub_2011/CUB_200_2011/images.txt"
+    ROOT_DIR="/home/gxdai/MMVC_LARGE2/Guoxian_Dai/data/cub_2011/CUB_200_2011/images" 
+    IMAGE_TXT="/home/gxdai/MMVC_LARGE2/Guoxian_Dai/data/cub_2011/CUB_200_2011/images.txt" 
     TRAIN_TEST_SPLIT_TXT="/home/gxdai/MMVC_LARGE2/Guoxian_Dai/data/cub_2011/CUB_200_2011/train_test_split.txt"
     LABEL_TXT="/home/gxdai/MMVC_LARGE2/Guoxian_Dai/data/cub_2011/CUB_200_2011/image_class_labels.txt"
     LEARNING_RATE=0.0001
@@ -70,12 +78,19 @@ elif [ $(hostname) = 'uranus' ];  then
     source $HOME/tf_path
 
     echo "START >>>>>>>>>>>>>>>>>>>"
-
-    ROOT_DIR="/data1/Guoxian_Dai/CUB_200_2011/images"
-    IMAGE_TXT="/data1/Guoxian_Dai/CUB_200_2011/images.txt"
-    TRAIN_TEST_SPLIT_TXT="/data1/Guoxian_Dai/CUB_200_2011/train_test_split.txt"
-    LABEL_TXT="/data1/Guoxian_Dai/CUB_200_2011/image_class_labels.txt"
-    LEARNING_RATE=0.01
+    if [[ $DATASET_NAME = "cub200" ]]; then
+        ROOT_DIR="/data1/Guoxian_Dai/CUB_200_2011/images"
+        IMAGE_TXT="/data1/Guoxian_Dai/CUB_200_2011/images.txt"
+        TRAIN_TEST_SPLIT_TXT="/data1/Guoxian_Dai/CUB_200_2011/train_test_split.txt"
+        LABEL_TXT="/data1/Guoxian_Dai/CUB_200_2011/image_class_labels.txt"
+    elif [[ $DATASET_NAME = "car196" ]]; then
+        ROOT_DIR="/data1/Guoxian_Dai/car196"
+        IMAGE_TXT="/data1/Guoxian_Dai/car196/cars_annos.mat"
+        TRAIN_TEST_SPLIT_TXT="/data1/Guoxian_Dai/CUB_200_2011/train_test_split.txt"
+        LABEL_TXT="/data1/Guoxian_Dai/CUB_200_2011/image_class_labels.txt"
+    fi
+    LEARNING_RATE=0.001
+    LEARNING_RATE2=0.0001
     TRAIN_BATCH_SIZE=64
     PYTHON=py_gxdai
 
@@ -93,15 +108,21 @@ elif [ $(hostname) = 'MARS' ];  then
         IMAGE_TXT="/data/Guoxian_Dai/CUB_200_2011/images.txt"
         TRAIN_TEST_SPLIT_TXT="/data/Guoxian_Dai/CUB_200_2011/train_test_split.txt"
         LABEL_TXT="/data/Guoxian_Dai/CUB_200_2011/image_class_labels.txt"
-    elif [[ $DATASET_NAME = "online_product" ]]; then
+    elif [[ $DATASET_NAME = "online_product" ]]; then 
         echo "Online product"
         ROOT_DIR="/data/Guoxian_Dai/Stanford_Online_Products"
         IMAGE_TXT="/data/Guoxian_Dai/Stanford_Online_Products/Ebay_train.txt"
         TRAIN_TEST_SPLIT_TXT="/data/Guoxian_Dai/Stanford_Online_Products/Ebay_test.txt"
         LABEL_TXT="/data/Guoxian_Dai/CUB_200_2011/image_class_labels.txt"
-    fi
+    elif [[ $DATASET_NAME = "car196" ]]; then
+        ROOT_DIR="/data/Guoxian_Dai/car196"
+        IMAGE_TXT="/data/Guoxian_Dai/car196/cars_annos.mat"
+        TRAIN_TEST_SPLIT_TXT="/data/Guoxian_Dai/CUB_200_2011/train_test_split.txt"
+        LABEL_TXT="/data/Guoxian_Dai/CUB_200_2011/image_class_labels.txt"
 
-    LEARNING_RATE=0.01
+    fi
+    LEARNING_RATE=0.001
+    LEARNING_RATE2=0.0001
     TRAIN_BATCH_SIZE=64
     PYTHON=py_gxdai
 
@@ -135,25 +156,80 @@ fi
 
 # [] for traditional shell
 # [[ ]] for the updated version
-# $#: the total number of arguments
+# $#: the total number of arguments 
+
+
+
+MARGIN=20 
+MEAN_VALUE=10 
+# STD_VALUE=4 
+
+
+
+# change embeeding size with cmd arguments
+EMBEDDING_SIZE=64
+
+
+# weight file for contrastive loss on CUB dataset 
+# WEIGHT_FILE="checkpoint/cub200/contrastive_loss/64/model_0_.pth"
+
+# weight file for focal contrastive loss on CUB dataset 
+# WEIGHT_FILE="checkpoint/cub200/focal_contrastive_loss/64/model_21_.pth"
+
+
+# weight file for focal triplet loss on CUB dataset 
+# WEIGHT_FILE="checkpoint/cub200/focal_triplet_loss/model_69_.pth"
+
+# weight file for triplet loss on CUB dataset 
+# WEIGHT_FILE="checkpoint/cub200/triplet_loss/64/model_18_.pth"
+
+
+
+# weight file for contrastive loss on CAR dataset 
+# WEIGHT_FILE="checkpoint/car196/contrastive_loss/64/model_24_.pth"
+
+# weight file for focal contrastive loss on CAR dataset 
+WEIGHT_FILE="checkpoint/car196/focal_contrastive_loss/64/model_24_.pth"
+
+# weight file for triplet loss on CAR dataset 
+# WEIGHT_FILE="checkpoint/car196/triplet_loss/64/model_24_.pth"
+
+# weight file for focal triplet loss on CAR dataset 
+# WEIGHT_FILE="checkpoint/car196/focal_triplet_loss/64/model_42_.pth"
+
+
+
+
+
+MODE="training"
+
+echo "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+
 CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py \
                         --dataset_name $DATASET_NAME \
-                        --optimizer "momentum" \
+                        --mode $MODE \
+                        --weight_file $WEIGHT_FILE \
+                        --manual_seed $MANUAL_SEED \
+                        --optimizer "rmsprop" \
+                        --pair_type "matrix" \
                         --train_batch_size $TRAIN_BATCH_SIZE \
                         --momentum 0.9 \
                         --learning_rate $LEARNING_RATE \
+                        --learning_rate2 ${LEARNING_RATE2} \
                         --learning_rate_decay_type "fixed" \
                         --loss_type $LOSS_TYPE \
-                        --margin 1.0 \
+                        --margin $MARGIN \
                         --root_dir $ROOT_DIR \
                         --image_txt $IMAGE_TXT \
                         --train_test_split_txt $TRAIN_TEST_SPLIT_TXT \
                         --label_txt $LABEL_TXT \
                         --focal_decay_factor "1000000000.0" \
-                        --display_step 1 \
-                        --eval_step 10 \
-                        --embedding_size 64 \
-                        --num_epochs_per_decay 5 > ${LOSS_TYPE}.txt 2>&1
+                        --display_step 20 \
+                        --eval_step 3 \
+                        --embedding_size $EMBEDDING_SIZE \
+                        --mean_value $MEAN_VALUE \
+                        --std_value $STD_VALUE \
+                        --num_epochs_per_decay  5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
                         #--with_regularizer
 
 # Explannation for 2 and 1, file descriptor
