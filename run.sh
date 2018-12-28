@@ -229,7 +229,7 @@ CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py \
                         --embedding_size $EMBEDDING_SIZE \
                         --mean_value $MEAN_VALUE \
                         --std_value $STD_VALUE \
-                        --num_epochs_per_decay  5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+                        --num_epochs_per_decay  5 # > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
                         #--with_regularizer
 
 # Explannation for 2 and 1, file descriptor

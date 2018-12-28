@@ -29,8 +29,14 @@ def get_feature_and_label(model, dataloader, device):
     return feature_set.cpu().numpy(), label_set.cpu().numpy(), path_set
 
 
-def evaluation(feature_set, label_set, k_set=[1, 2, 4, 8, 16, 32]):
-    distM = distance.cdist(feature_set, feature_set)
+def evaluation(feature_set, label_set, k_set=[1, 2, 4, 8, 16, 32], distance_type=None):
+    if distance_type == 'cosine':
+        squared_feature_set = np.sqrt(np.sum(np.power(feature_set, 2), axis=1, keepdims=True))
+        distM = np.divide(np.matmul(feature_set, np.transpose(feature_set, (1, 0))), 
+                         np.matmul(squared_feature_set, np.transpose(squared_feature_set, (1, 0))))
+        distM = 1. - distM
+    elif distance_type == "Euclidean":
+        distM = distance.cdist(feature_set, feature_set)
     nn_av, ft_av, st_av, dcg_av, e_av, map_, p_points, pre, rec, rankArray = RetrievalEvaluation.RetrievalEvaluation(distM, label_set, label_set, testMode=2)
     recall_k = evaluate_recall.evaluate_recall(feature_set, label_set, k_set)
 

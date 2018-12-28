@@ -2,6 +2,7 @@
 This module is for contructing loss function.
 """
 import torch
+import math
 
 
 def calculate_distance_and_similariy_label(features, features_, labels, labels_, sqrt=True, pair_type='vector'):
@@ -171,6 +172,56 @@ def focal_contrastive_loss(pairwise_distances, pairwise_similarity_labels, margi
 
     return loss, positive_pair_loss, negative_pair_loss
 
+def triplet_loss(pairwise_distances, pairwise_similarity_labels, margin=1):
+    """Create the triplet loss."""
+    anchor_positive_distance = torch.unsqueeze(pairwise_distances, 2)
+    anchor_negative_distance = torch.unsqueeze(pairwise_distances, 1)
+    triplet_loss = margin + anchor_positive_distance - anchor_negative_distance
+    i_equal_j = torch.unsqueeze(pairwise_similarity_labels, 2)
+    j_equal_k = torch.unsqueeze(pairwise_similarity_labels, 1)
+
+    mask = i_equal_j * (1 - j_equal_k)
+    effective_pair_num = torch.sum(mask)
+
+    # hinge loss
+    triplet_loss = torch.clamp(triplet_loss, 0.)
+    # apply mask
+    triplet_loss = triplet_loss * mask
+    # average loss
+    # triplet_loss = torch.sum(triplet_loss) / effective_pair_num
+    triplet_loss = 3.0 * torch.mean(triplet_loss)
+
+    return triplet_loss, triplet_loss, triplet_loss
+
+
+
+
+def angular_loss(ap_distances, cn_distances, pairwise_similarity_labels, alpha):
+    """
+    Args:
+        ap_distances: anchor and positive example distances.
+        cn_distances: center and negative example distances.
+        ...
+    """
+    coeff = 4 * math.tan(alpha/180.0*math.pi)**2
+    ap_distances = torch.unsqueeze(ap_distances, 2) 
+    cn_distances = torch.unsqueeze(cn_distances, 1)
+    batch_size = 64
+    total_num = batch_size ** 3
+
+    i_equal_j = torch.unsqueeze(pairwise_similarity_labels, 2)
+    j_equal_k = torch.unsqueeze(pairwise_similarity_labels, 1)
+
+    mask = i_equal_j * (1 - j_equal_k)
+    loss = torch.pow(ap_distances, 2) - coeff*torch.pow(cn_distances, 2)
+    loss = torch.clamp(loss, 0)
+    loss = loss * mask
+    loss = 10 * torch.mean(loss)
+    """
+    loss = torch.log(1 + torch.sum(mask * torch.exp(
+                    torch.pow(ap_distances, 2) - coeff*torch.pow(cn_distances, 2))))  
+    """
+    return loss, loss, loss
 
 if __name__ == '__main__':
     feature_1 = torch.randn(10, 5)

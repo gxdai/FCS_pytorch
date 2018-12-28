@@ -15,6 +15,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torchvision import models, datasets, transforms
+import math
 
 class SiameseNetwork(nn.Module):
     def __init__(self, **kargs):

@@ -5516,3 +5516,2041 @@ running code on the uranus
 running code on the uranus
 ./run.sh: line 73: 17105 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --mode $MODE --optimizer "momentum" --batch_size 32 --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 50 --embedding_size 128 --num_epochs_per_decay 5 > ${LOSS_TYPE}.txt 2>&1
 running code on the uranus
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+./run.sh: line 111:  2221 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --optimizer "momentum" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 20 --embedding_size 128 --num_epochs_per_decay 5 > ${LOSS_TYPE}.txt 2>&1
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+running code on 102
+Activate anaconda
+./run.sh: line 107: 10031 Terminated  ./run.sh: line 107:  2098 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --optimizer "momentum" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 20 --embedding_size 128 --num_epochs_per_decay 5 > ${LOSS_TYPE}.txt 2>&1
+===============
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+running code on 102
+Activate anaconda
+./run.sh: line 107: 10991 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --optimizer "momentum" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 20 --embedding_size 128 --num_epochs_per_decay 5 > ${LOSS_TYPE}.txt 2>&1
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+./run.sh: line 107: 10517 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --optimizer "momentum" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 20 --embedding_size 128 --num_epochs_per_decay 5 > ${LOSS_TYPE}.txt 2>&1
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+./run.sh: line 133: 29133 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "momentum" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 20 --embedding_size 128 --num_epochs_per_decay 5 > ${LOSS_TYPE}.txt 2>&1
+./run.sh: line 107: 31903 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --optimizer "momentum" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 20 --embedding_size 128 --num_epochs_per_decay 5 > ${LOSS_TYPE}.txt 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+./run.sh: line 156:  1359 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "momentum" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 10 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}.txt 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+./run.sh: line 156: 21250 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "momentum" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 1 --eval_step 10 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}.txt 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+./run.sh: line 157: 23368 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "momentum" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 1 --eval_step 10 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}.txt 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+====================
+Namespace(aux_logits=False, ckpt_dir='./checkpoint', class_num=5, dataset_name='cub200', display_step=20, dropout_keep_prob=0.5, embedding_size=128, eval_step=5, evaluation=0, focal_decay_factor=1.0, gamma=0.98, height=512, image_txt='/data/Guoxian_Dai/CUB_200_2011/CUB_200_2011/images.txt', label_txt='/data/Guoxian_Dai/CUB_200_2011/CUB_200_2011/image_class_labels.txt', learning_rate=0.01, learning_rate2=0.0001, learning_rate_decay_type='fixed', loss_type='contrastive_loss', margin=1.0, mode='train', momentum=0.01, ngpu=2, num_epochs=10000, num_epochs_per_decay=2, num_workers=4, optimizer='momentum', pair_type='vector', pretrained=False, pretrained_model_path='./weights/inception_v3.ckpt', restore_ckpt=0, root_dir='/data/Guoxian_Dai/CUB_200_2011/CUB_200_2011/images', targetNum=1000, test_batch_size=32, train_batch_size=64, train_test_split_txt='/data/Guoxian_Dai/CUB_200_2011/CUB_200_2011/train_test_split.txt', weightFile='./models/my-model', weight_decay=0.0005, width=512, with_regularizer=False)
+====================
+pair_type = vector
+128
+learning_rate = 0.010
+learning_rate2 = 0.000
+dataset_name = cub200    
+/data/Guoxian_Dai/CUB_200_2011/CUB_200_2011/images
+/data/Guoxian_Dai/CUB_200_2011/CUB_200_2011/images.txt
+/data/Guoxian_Dai/CUB_200_2011/CUB_200_2011/train_test_split.txt
+/data/Guoxian_Dai/CUB_200_2011/CUB_200_2011/image_class_labels.txt
+Traceback (most recent call last):
+  File "main.py", line 218, in <module>
+    train(args)
+  File "main.py", line 172, in train
+    dataset_train = CubDataset(root_dir, image_txt, train_test_split_txt, label_txt, transform=transform, is_train=True, offset=1)
+  File "/home/gxdai/MMVC_LARGE/Guoxian_Dai/sourcecode/FCS_pytorch/dataset.py", line 27, in __init__
+    self.label_txt, self.offset
+  File "/home/gxdai/MMVC_LARGE/Guoxian_Dai/sourcecode/FCS_pytorch/dataset.py", line 106, in generate_half_split_list
+    raise IOError("Please check the files or paths existence")
+OSError: Please check the files or paths existence
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+./run.sh: line 158: 22627 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "momentum" --pair_type "vector" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 1 --eval_step 10 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}.txt 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+./run.sh: line 158: 15275 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 1 --eval_step 10 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}.txt 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+./run.sh: line 158: 22494 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "sgd" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 1 --eval_step 10 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}.txt 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+./run.sh: line 158:  7882 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "sgd" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 1 --eval_step 10 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}.txt 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+./run.sh: line 158: 18095 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "sgd" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 1 --eval_step 10 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}.txt 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Mon Nov 12 09:29:44 PST 2018.txt
+./run.sh: line 159: 25905 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 20 --embedding_size 64 --num_epochs_per_decay 5 > "${LOSS_TYPE}_$(date).txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Mon Nov 12 22:31:57 PST 2018.txt
+./run.sh: line 159:  9128 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 20 --embedding_size 64 --num_epochs_per_decay 5 > "${LOSS_TYPE}_$(date).txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Mon Nov 12 23:25:49 PST 2018.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Mon Nov 12 23:27:25 PST 2018.txt
+pair_type = matrix
+Init the last two layers with normal distribution
+128
+args.optimizer = rmsprop   
+learning_rate = 0.00100
+learning_rate2 = 0.00010
+training image number is 5864
+testing image number is 5924
+len(self.train_img_list) =  5864
+len(self.train_label_list) =  5864
+len(self.test_img_list) =  5924
+len(self.test_label_list) =  5924
+training image number is 5864
+testing image number is 5924
+len(self.train_img_list) =  5864
+len(self.train_label_list) =  5864
+len(self.test_img_list) =  5924
+len(self.test_label_list) =  5924
+./run.sh: line 159:   367 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 20 --embedding_size 128 --num_epochs_per_decay 5 > "${LOSS_TYPE}_$(date).txt" 2>&1
+./run.sh: line 159:  1776 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 20 --embedding_size 128 --num_epochs_per_decay 5
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Mon Nov 12 23:27:47 PST 2018.txt
+pair_type = matrix
+Init the last two layers with normal distribution
+128
+args.optimizer = rmsprop   
+learning_rate = 0.00100
+learning_rate2 = 0.00010
+training image number is 5864
+testing image number is 5924
+len(self.train_img_list) =  5864
+len(self.train_label_list) =  5864
+len(self.test_img_list) =  5924
+len(self.test_label_list) =  5924
+training image number is 5864
+testing image number is 5924
+len(self.train_img_list) =  5864
+len(self.train_label_list) =  5864
+len(self.test_img_list) =  5924
+len(self.test_label_list) =  5924
+./run.sh: line 159:  2215 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 20 --embedding_size 128 --num_epochs_per_decay 5
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Mon Nov 12 23:28:10 PST 2018.txt
+./run.sh: line 159:  2372 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 20 --embedding_size 128 --num_epochs_per_decay 5 > "${LOSS_TYPE}_$(date).txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Tue Nov 13 09:17:34 PST 2018.txt
+./run.sh: line 159: 31800 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 20 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}_$(date +%m_%d_%Y).txt 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Tue Nov 13 09:26:51 PST 2018.txt
+./run.sh: line 158: 18608 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "sgd" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 1.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 1 --eval_step 10 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}.txt 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Tue Nov 13 11:38:23 PST 2018.txt
+./run.sh: line 159:  3857 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 2.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 20 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}_$(date +%m_%d_%Y).txt 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Tue Nov 13 22:23:03 PST 2018.txt
+./run.sh: line 159: 11538 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 5.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 5 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}_$(date +%m_%d_%Y_%H_%M).txt 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Tue Nov 13 23:40:51 PST 2018.txt
+./run.sh: line 159: 28807 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 5.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 20 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}_$(date +%m_%d_%Y_%H_%M).txt 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 00:11:14 PST 2018.txt
+./run.sh: line 159: 14191 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 10.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 5 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}_$(date +%m_%d_%Y_%H_%M).txt 2>&1
+./run.sh: line 159: 27911 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 15.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 5 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}_$(date +%m_%d_%Y_%H_%M).txt 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 02:04:12 PST 2018.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_Wed Nov 14 02:04:20 PST 2018.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_Wed Nov 14 02:17:37 PST 2018.txt
+./run.sh: line 159: 16831 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 15.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 5 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}_$(date +%m_%d_%Y_%H_%M).txt 2>&1
+./run.sh: line 159: 21089 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 15.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 5 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}_$(date +%m_%d_%Y_%H_%M).txt 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 03:28:22 PST 2018.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_Wed Nov 14 03:28:31 PST 2018.txt
+./run.sh: line 161: 21905 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 15.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 5 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}_$(date +%m_%d_%Y_%H_%M).txt 2>&1
+./run.sh: line 161: 21960 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 15.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 5 --embedding_size 64 --num_epochs_per_decay 5 > ${LOSS_TYPE}_$(date +%m_%d_%Y_%H_%M).txt 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 03:47:29 PST 2018.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focalcontrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focalcontrastive_loss_Wed Nov 14 03:47:37 PST 2018.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focalcontrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focalcontrastive_loss_Wed Nov 14 03:47:43 PST 2018.txt
+./run.sh: line 163: 31459 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 15.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 5 --embedding_size 64 --mean 7.5 --std 2.0 --num_epochs_per_decay 5 > ${LOSS_TYPE}_$(date +%m_%d_%Y_%H_%M).txt 2>&1
+./run.sh: line 163: 31549 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 15.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 5 --embedding_size 64 --mean 7.5 --std 2.0 --num_epochs_per_decay 5 > ${LOSS_TYPE}_$(date +%m_%d_%Y_%H_%M).txt 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_Wed Nov 14 03:48:14 PST 2018.txt
+./run.sh: line 163: 32204 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 15.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 5 --embedding_size 64 --mean 7.5 --std 2.0 --num_epochs_per_decay 5 > ${LOSS_TYPE}_$(date +%m_%d_%Y_%H_%M).txt 2>&1
+./run.sh: line 163: 31402 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin 15.0 --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 5 --embedding_size 64 --mean 7.5 --std 2.0 --num_epochs_per_decay 5 > ${LOSS_TYPE}_$(date +%m_%d_%Y_%H_%M).txt 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 20:29:09 PST 2018.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_Loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_Loss_Wed Nov 14 20:29:31 PST 2018.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_Wed Nov 14 20:32:34 PST 2018.txt
+./run.sh: line 167: 18356 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+./run.sh: line 167: 20069 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_Wed Nov 14 20:40:41 PST 2018.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 20:40:51 PST 2018.txt
+./run.sh: line 167: 24400 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+./run.sh: line 167: 24323 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_Wed Nov 14 20:46:49 PST 2018.txt
+focal_contrastive_loss_margin_10_embedding_size_64_mean_5_std_2.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 20:47:27 PST 2018.txt
+contrastive_loss_margin_10_embedding_size_64_mean_5_std_2.txt
+./run.sh: line 168: 27836 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+./run.sh: line 168: 27345 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 20:53:56 PST 2018.txt
+contrastive_loss_margin_10_embedding_size_64_mean_5_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_Wed Nov 14 20:54:01 PST 2018.txt
+focal_contrastive_loss_margin_10_embedding_size_64_mean_5_std_2.txt
+./run.sh: line 168: 31140 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+./run.sh: line 168: 31195 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_Wed Nov 14 21:03:39 PST 2018.txt
+focal_contrastive_loss_margin_10_embedding_size_64_mean_5_std_2.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 21:03:46 PST 2018.txt
+contrastive_loss_margin_10_embedding_size_64_mean_5_std_2.txt
+./run.sh: line 168:  3962 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+./run.sh: line 168:  3904 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 21:10:49 PST 2018.txt
+contrastive_loss_margin_10_embedding_size_64_mean_5_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_Wed Nov 14 21:10:54 PST 2018.txt
+focal_contrastive_loss_margin_10_embedding_size_64_mean_5_std_2.txt
+./run.sh: line 168:  8082 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+./run.sh: line 168:  8134 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_Wed Nov 14 21:17:51 PST 2018.txt
+focal_contrastive_loss_margin_15_embedding_size_64_mean_7.5_std_2.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 21:17:56 PST 2018.txt
+contrastive_loss_margin_15_embedding_size_64_mean_7.5_std_2.txt
+./run.sh: line 168: 12315 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+./run.sh: line 168: 12255 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 21:24:52 PST 2018.txt
+contrastive_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_Wed Nov 14 21:24:59 PST 2018.txt
+focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+./run.sh: line 168: 16483 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+./run.sh: line 168: 16429 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_Wed Nov 14 21:39:38 PST 2018.txt
+focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 21:39:46 PST 2018.txt
+contrastive_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+./run.sh: line 168: 24679 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+./run.sh: line 168: 24611 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_Wed Nov 14 21:58:19 PST 2018.txt
+focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_5.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 21:58:31 PST 2018.txt
+contrastive_loss_margin_20_embedding_size_64_mean_10_std_5.txt
+./run.sh: line 168:  1996 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+./run.sh: line 168:  1910 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 22:09:15 PST 2018.txt
+contrastive_loss_margin_20_embedding_size_64_mean_10_std_50.txt
+./run.sh: line 168:  7780 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 22:15:49 PST 2018.txt
+contrastive_loss_margin_20_embedding_size_64_mean_10_std_50.txt
+./run.sh: line 168:  9918 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 22:21:49 PST 2018.txt
+contrastive_loss_margin_20_embedding_size_64_mean_10_std_50.txt
+./run.sh: line 168: 11077 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 22:24:28 PST 2018.txt
+contrastive_loss_margin_20_embedding_size_64_mean_10_std_50.txt
+./run.sh: line 168: 12200 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean $MEAN --std $STD --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN}_std_${STD}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 22:37:07 PST 2018.txt
+contrastive_loss_margin_20_embedding_size_64_mean_10_std_25.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 22:41:35 PST 2018.txt
+contrastive_loss_margin_20_embedding_size_64_mean_10_std_15.txt
+./run.sh: line 168: 15699 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 166: 17234 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 22:47:03 PST 2018.txt
+contrastive_loss_margin_20_embedding_size_64_mean_10_std_150.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 22:47:32 PST 2018.txt
+contrastive_loss_margin_20_embedding_size_64_mean_10_std_1.txt
+./run.sh: line 166: 20338 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 166: 19874 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_Wed Nov 14 22:52:47 PST 2018.txt
+contrastive_loss_margin_20_embedding_size_64_mean_10_std_150.txt
+./run.sh: line 166: 22972 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+./run.sh: line 166:  2169 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 167: unexpected EOF while looking for matching `"'
+./run.sh: line 174: syntax error: unexpected end of file
+./run.sh: line 166:  2609 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 167: unexpected EOF while looking for matching `"'
+./run.sh: line 174: syntax error: unexpected end of file
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = triplet_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+triplet_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_triplet_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_triplet_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+./run.sh: line 166: 10631 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 166: 10686 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_triplet_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_triplet_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = triplet_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+triplet_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+./run.sh: line 166: 16854 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 166: 16781 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = triplet_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+triplet_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_triplet_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_triplet_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on 102
+Activate anaconda
+DATASET_NAME = cub200
+contrastive_loss_margin_20_embedding_size_128_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 5,6
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on 102
+Activate anaconda
+DATASET_NAME = cub200
+focal_contrastive_loss_margin_20_embedding_size_128_mean_10_std_2.txt
+./run.sh: line 166: 22998 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 166: 23042 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = triplet_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+triplet_loss_margin_20_embedding_size_128_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = triplet_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+triplet_loss_margin_20_embedding_size_128_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = triplet_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+triplet_loss_margin_20_embedding_size_128_mean_10_std_2.txt
+./run.sh: line 166: 29618 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+./run.sh: line 166:  8770 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 166: 10210 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 166:  1397 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 166:  1469 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_margin_20_embedding_size_128_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_margin_20_embedding_size_128_mean_10_std_2.txt
+./run.sh: line 166:  2133 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 166:  2187 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_margin_20_embedding_size_256_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_margin_20_embedding_size_256_mean_10_std_2.txt
+./run.sh: line 166:  5043 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 166:  5115 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_margin_20_embedding_size_512_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_margin_20_embedding_size_512_mean_10_std_2.txt
+./run.sh: line 166: 17584 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 166: 17641 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_margin_20_embedding_size_512_mean_10_std_2.txt
+./run.sh: line 174: 26255 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+./run.sh: line 174: 26922 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 174:  2835 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+./run.sh: line 174: 30356 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 174: 30419 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = triplet_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+triplet_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_triplet_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_triplet_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+./run.sh: line 178: 18789 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 178: 18864 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_triplet_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_triplet_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = triplet_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+triplet_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+./run.sh: line 184:  8530 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 184:  8465 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+contrastive_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+./run.sh: line 184:  2878 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 185: unexpected EOF while looking for matching `"'
+./run.sh: line 192: syntax error: unexpected end of file
+./run.sh: line 184:  2948 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 185: unexpected EOF while looking for matching `"'
+./run.sh: line 192: syntax error: unexpected end of file
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_contrastive_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+./run.sh: line 193: 24395 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 193: 24475 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = triplet_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_triplet_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_triplet_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_focal_triplet_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = triplet_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_triplet_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_triplet_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_focal_triplet_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = triplet_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_triplet_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_triplet_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_focal_triplet_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+./run.sh: line 193: 20071 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 193: 20141 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = focal_triplet_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_focal_triplet_loss_margin_20_embedding_size_64_mean_10_std_3.txt
+./run.sh: line 193:  2341 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = triplet_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_triplet_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_triplet_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_focal_triplet_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+./run.sh: line 193:  4350 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 193:  4415 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_contrastive_loss_margin_20_embedding_size_128_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_focal_contrastive_loss_margin_20_embedding_size_128_mean_10_std_2.txt
+./run.sh: line 193: 19280 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 193: 18845 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_contrastive_loss_margin_20_embedding_size_256_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_focal_contrastive_loss_margin_20_embedding_size_256_mean_10_std_2.txt
+./run.sh: line 193: 24765 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 193: 24830 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_contrastive_loss_margin_20_embedding_size_512_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_focal_contrastive_loss_margin_20_embedding_size_512_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = contrastive_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_contrastive_loss_margin_20_embedding_size_512_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = car196
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+car196_focal_contrastive_loss_margin_20_embedding_size_512_mean_10_std_2.txt
+./run.sh: line 219:  6685 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 219:  6633 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+cub200_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_4.txt
+./run.sh: line 219: 25124 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 
+LOSS_TYPE = 
+DATASET_NAME = 
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+__margin_20_embedding_size_64_mean_10_std_4.txt
+Traing Info:
+GPU_ID = 
+LOSS_TYPE = 
+DATASET_NAME = 
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+__margin_20_embedding_size_64_mean_10_std_4.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+cub200_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_4.txt
+margin = 20.00
+manual_seed = 2222.00
+mean_value = 10.00
+std_value =  4.00
+pair_type = matrix
+loss_type = focal_contrastive_loss
+mode = training
+weight_file = checkpoint/car196/focal_contrastive_loss/64/model_24_.pth
+model_dir = ./checkpoint/cub200/focal_contrastive_loss/64
+Init the last two layers with normal distribution
+64
+args.optimizer = rmsprop   
+learning_rate = 0.00100
+learning_rate2 = 0.00010
+training image number is 5864
+testing image number is 5924
+len(self.train_img_list) =  5864
+len(self.train_label_list) =  5864
+len(self.test_img_list) =  5924
+len(self.test_label_list) =  5924
+training image number is 5864
+testing image number is 5924
+len(self.train_img_list) =  5864
+len(self.train_label_list) =  5864
+len(self.test_img_list) =  5924
+len(self.test_label_list) =  5924
+Finish eval
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+cub200_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_8.txt
+margin = 20.00
+manual_seed = 2222.00
+mean_value = 10.00
+std_value =  8.00
+pair_type = matrix
+loss_type = focal_contrastive_loss
+mode = training
+weight_file = checkpoint/car196/focal_contrastive_loss/64/model_24_.pth
+model_dir = ./checkpoint/cub200/focal_contrastive_loss/64
+Init the last two layers with normal distribution
+64
+args.optimizer = rmsprop   
+learning_rate = 0.00100
+learning_rate2 = 0.00010
+training image number is 5864
+testing image number is 5924
+len(self.train_img_list) =  5864
+len(self.train_label_list) =  5864
+len(self.test_img_list) =  5924
+len(self.test_label_list) =  5924
+training image number is 5864
+testing image number is 5924
+len(self.train_img_list) =  5864
+len(self.train_label_list) =  5864
+len(self.test_img_list) =  5924
+len(self.test_label_list) =  5924
+Finish eval
+Recall@1: 0.32225
+Recall@2: 0.45037
+Recall@4: 0.58356
+Recall@8: 0.70594
+Recall@16: 0.81465
+Recall@32: 0.88977
+
+normalized_mutual_information = 0.45489767490646427
+RI = 0.9812642278586903
+F_1 = 0.12332672781439115
+
+The NN is 0.32225
+The FT is 0.14565
+The ST is 0.21604
+The DCG is 0.52663
+The E is 0.12615
+The MAP 0.11117
+
+Recall@1: 0.32225
+Recall@2: 0.45037
+Recall@4: 0.58356
+Recall@8: 0.70594
+Recall@16: 0.81465
+Recall@32: 0.88977
+
+normalized_mutual_information = 0.45489767490646427
+RI = 0.9812642278586903
+F_1 = 0.12332672781439115
+
+The NN is 0.32225
+The FT is 0.14565
+The ST is 0.21604
+The DCG is 0.52663
+The E is 0.12615
+The MAP 0.11117
+
+2018-11-16 07:30:18.930608, Epoch [  0/10000], Iter [ 20/ 92], Loss: 8.34610, Positive loss: 6.51727, Negative loss: 1.82882
+2018-11-16 07:30:30.399116, Epoch [  0/10000], Iter [ 40/ 92], Loss: 7.10807, Positive loss: 5.19853, Negative loss: 1.90954
+2018-11-16 07:30:42.293898, Epoch [  0/10000], Iter [ 60/ 92], Loss: 5.19818, Positive loss: 3.52910, Negative loss: 1.66908
+2018-11-16 07:30:54.448782, Epoch [  0/10000], Iter [ 80/ 92], Loss: 6.24031, Positive loss: 5.09934, Negative loss: 1.14097
+Start evalution
+2018-11-16 07:30:35.780169, Epoch [  0/10000], Iter [ 20/ 92], Loss: 6.35723, Positive loss: 3.40866, Negative loss: 2.94857
+2018-11-16 07:30:47.383680, Epoch [  0/10000], Iter [ 40/ 92], Loss: 6.13507, Positive loss: 4.22074, Negative loss: 1.91433
+2018-11-16 07:30:59.046004, Epoch [  0/10000], Iter [ 60/ 92], Loss: 5.93711, Positive loss: 4.40733, Negative loss: 1.52978
+2018-11-16 07:31:10.461802, Epoch [  0/10000], Iter [ 80/ 92], Loss: 4.13174, Positive loss: 2.19132, Negative loss: 1.94042
+Start evalution
+Recall@1: 0.27718
+Recall@2: 0.39500
+Recall@4: 0.52971
+Recall@8: 0.66999
+Recall@16: 0.79288
+Recall@32: 0.88065
+
+normalized_mutual_information = 0.4639269651281954
+RI = 0.9816493184022778
+F_1 = 0.12416719942326264
+
+The NN is 0.27718
+The FT is 0.15174
+The ST is 0.23781
+The DCG is 0.53826
+The E is 0.12612
+The MAP 0.12876
+
+Recall@1: 0.29895
+Recall@2: 0.41762
+Recall@4: 0.54676
+Recall@8: 0.67505
+Recall@16: 0.79541
+Recall@32: 0.88521
+
+normalized_mutual_information = 0.4783515827917813
+RI = 0.9818391846842035
+F_1 = 0.1372776258427879
+
+The NN is 0.29895
+The FT is 0.16642
+The ST is 0.25811
+The DCG is 0.55183
+The E is 0.13977
+The MAP 0.14406
+
+2018-11-16 07:32:16.446085, Epoch [  1/10000], Iter [ 20/ 92], Loss: 3.92114, Positive loss: 2.98845, Negative loss: 0.93269
+2018-11-16 07:32:28.056461, Epoch [  1/10000], Iter [ 40/ 92], Loss: 4.50804, Positive loss: 3.20307, Negative loss: 1.30497
+2018-11-16 07:32:40.331228, Epoch [  1/10000], Iter [ 60/ 92], Loss: 3.42575, Positive loss: 2.60689, Negative loss: 0.81886
+2018-11-16 07:32:52.681303, Epoch [  1/10000], Iter [ 80/ 92], Loss: 3.98899, Positive loss: 3.14605, Negative loss: 0.84294
+2018-11-16 07:32:34.462588, Epoch [  1/10000], Iter [ 20/ 92], Loss: 3.52471, Positive loss: 2.29744, Negative loss: 1.22727
+2018-11-16 07:32:46.082552, Epoch [  1/10000], Iter [ 40/ 92], Loss: 3.39865, Positive loss: 2.41457, Negative loss: 0.98408
+2018-11-16 07:32:57.632592, Epoch [  1/10000], Iter [ 60/ 92], Loss: 3.87200, Positive loss: 3.13738, Negative loss: 0.73462
+2018-11-16 07:33:09.586448, Epoch [  1/10000], Iter [ 80/ 92], Loss: 2.40268, Positive loss: 1.58380, Negative loss: 0.81888
+2018-11-16 07:33:14.557216, Epoch [  2/10000], Iter [ 20/ 92], Loss: 2.72712, Positive loss: 2.20265, Negative loss: 0.52446
+2018-11-16 07:33:27.054891, Epoch [  2/10000], Iter [ 40/ 92], Loss: 3.58994, Positive loss: 2.77583, Negative loss: 0.81411
+2018-11-16 07:33:39.345108, Epoch [  2/10000], Iter [ 60/ 92], Loss: 2.38876, Positive loss: 1.68313, Negative loss: 0.70563
+2018-11-16 07:33:51.651215, Epoch [  2/10000], Iter [ 80/ 92], Loss: 2.99208, Positive loss: 2.32782, Negative loss: 0.66426
+2018-11-16 07:33:30.576570, Epoch [  2/10000], Iter [ 20/ 92], Loss: 2.82044, Positive loss: 2.00348, Negative loss: 0.81696
+2018-11-16 07:33:42.849329, Epoch [  2/10000], Iter [ 40/ 92], Loss: 2.50568, Positive loss: 1.82697, Negative loss: 0.67872
+2018-11-16 07:33:55.136638, Epoch [  2/10000], Iter [ 60/ 92], Loss: 2.66631, Positive loss: 1.95503, Negative loss: 0.71129
+2018-11-16 07:34:07.483587, Epoch [  2/10000], Iter [ 80/ 92], Loss: 1.77301, Positive loss: 1.04406, Negative loss: 0.72895
+2018-11-16 07:34:13.120014, Epoch [  3/10000], Iter [ 20/ 92], Loss: 2.04561, Positive loss: 1.65459, Negative loss: 0.39102
+2018-11-16 07:34:25.420909, Epoch [  3/10000], Iter [ 40/ 92], Loss: 2.72047, Positive loss: 1.85927, Negative loss: 0.86120
+2018-11-16 07:34:37.709235, Epoch [  3/10000], Iter [ 60/ 92], Loss: 2.13879, Positive loss: 1.50452, Negative loss: 0.63427
+2018-11-16 07:34:49.988521, Epoch [  3/10000], Iter [ 80/ 92], Loss: 2.04173, Positive loss: 1.66987, Negative loss: 0.37186
+Start evalution
+2018-11-16 07:34:28.765145, Epoch [  3/10000], Iter [ 20/ 92], Loss: 1.90013, Positive loss: 1.39731, Negative loss: 0.50282
+2018-11-16 07:34:41.049099, Epoch [  3/10000], Iter [ 40/ 92], Loss: 1.96087, Positive loss: 1.52949, Negative loss: 0.43138
+2018-11-16 07:34:53.345917, Epoch [  3/10000], Iter [ 60/ 92], Loss: 2.18437, Positive loss: 1.72865, Negative loss: 0.45572
+2018-11-16 07:35:05.590621, Epoch [  3/10000], Iter [ 80/ 92], Loss: 1.34334, Positive loss: 0.94758, Negative loss: 0.39576
+Start evalution
+Recall@1: 0.30284
+Recall@2: 0.42100
+Recall@4: 0.55655
+Recall@8: 0.69058
+Recall@16: 0.80638
+Recall@32: 0.89045
+
+normalized_mutual_information = 0.4924254765601501
+RI = 0.9821323915752951
+F_1 = 0.14520694375514703
+
+The NN is 0.30284
+The FT is 0.17146
+The ST is 0.26616
+The DCG is 0.55779
+The E is 0.14250
+The MAP 0.14975
+
+Recall@1: 0.29321
+Recall@2: 0.40766
+Recall@4: 0.54878
+Recall@8: 0.68248
+Recall@16: 0.79507
+Recall@32: 0.88774
+
+normalized_mutual_information = 0.49128885191161525
+RI = 0.9823548047341285
+F_1 = 0.1465286699713824
+
+The NN is 0.29321
+The FT is 0.17310
+The ST is 0.26867
+The DCG is 0.55748
+The E is 0.14372
+The MAP 0.15174
+
+2018-11-16 07:36:11.899544, Epoch [  4/10000], Iter [ 20/ 92], Loss: 1.46088, Positive loss: 1.13463, Negative loss: 0.32625
+2018-11-16 07:36:24.008804, Epoch [  4/10000], Iter [ 40/ 92], Loss: 2.15659, Positive loss: 1.72572, Negative loss: 0.43087
+2018-11-16 07:36:36.335883, Epoch [  4/10000], Iter [ 60/ 92], Loss: 1.89511, Positive loss: 1.27557, Negative loss: 0.61954
+2018-11-16 07:36:48.565932, Epoch [  4/10000], Iter [ 80/ 92], Loss: 1.82661, Positive loss: 1.33631, Negative loss: 0.49030
+2018-11-16 07:36:29.886012, Epoch [  4/10000], Iter [ 20/ 92], Loss: 1.63131, Positive loss: 1.21035, Negative loss: 0.42096
+2018-11-16 07:36:41.515645, Epoch [  4/10000], Iter [ 40/ 92], Loss: 1.79451, Positive loss: 1.32375, Negative loss: 0.47076
+2018-11-16 07:36:53.547062, Epoch [  4/10000], Iter [ 60/ 92], Loss: 2.17534, Positive loss: 1.86590, Negative loss: 0.30943
+2018-11-16 07:37:05.846322, Epoch [  4/10000], Iter [ 80/ 92], Loss: 1.13338, Positive loss: 0.84576, Negative loss: 0.28762
+2018-11-16 07:37:10.052759, Epoch [  5/10000], Iter [ 20/ 92], Loss: 1.18202, Positive loss: 0.85912, Negative loss: 0.32290
+2018-11-16 07:37:22.361007, Epoch [  5/10000], Iter [ 40/ 92], Loss: 1.63909, Positive loss: 1.25589, Negative loss: 0.38320
+2018-11-16 07:37:34.776701, Epoch [  5/10000], Iter [ 60/ 92], Loss: 1.37111, Positive loss: 0.89999, Negative loss: 0.47112
+2018-11-16 07:37:47.172023, Epoch [  5/10000], Iter [ 80/ 92], Loss: 1.39064, Positive loss: 1.11091, Negative loss: 0.27973
+2018-11-16 07:37:27.311018, Epoch [  5/10000], Iter [ 20/ 92], Loss: 1.46340, Positive loss: 1.11190, Negative loss: 0.35150
+2018-11-16 07:37:39.635022, Epoch [  5/10000], Iter [ 40/ 92], Loss: 1.42006, Positive loss: 0.94411, Negative loss: 0.47595
+2018-11-16 07:37:51.970901, Epoch [  5/10000], Iter [ 60/ 92], Loss: 1.61886, Positive loss: 1.21056, Negative loss: 0.40830
+2018-11-16 07:38:04.227265, Epoch [  5/10000], Iter [ 80/ 92], Loss: 1.14744, Positive loss: 0.69393, Negative loss: 0.45352
+2018-11-16 07:38:08.659876, Epoch [  6/10000], Iter [ 20/ 92], Loss: 1.20876, Positive loss: 0.93823, Negative loss: 0.27053
+2018-11-16 07:38:20.955537, Epoch [  6/10000], Iter [ 40/ 92], Loss: 1.70436, Positive loss: 1.15335, Negative loss: 0.55102
+2018-11-16 07:38:33.421029, Epoch [  6/10000], Iter [ 60/ 92], Loss: 1.02824, Positive loss: 0.67909, Negative loss: 0.34915
+2018-11-16 07:38:45.940214, Epoch [  6/10000], Iter [ 80/ 92], Loss: 1.43281, Positive loss: 1.10966, Negative loss: 0.32314
+Start evalution
+2018-11-16 07:38:25.533055, Epoch [  6/10000], Iter [ 20/ 92], Loss: 1.18194, Positive loss: 0.70342, Negative loss: 0.47852
+2018-11-16 07:38:37.840374, Epoch [  6/10000], Iter [ 40/ 92], Loss: 1.22753, Positive loss: 0.90617, Negative loss: 0.32135
+2018-11-16 07:38:50.095656, Epoch [  6/10000], Iter [ 60/ 92], Loss: 1.58986, Positive loss: 1.29528, Negative loss: 0.29458
+2018-11-16 07:39:02.342564, Epoch [  6/10000], Iter [ 80/ 92], Loss: 0.91620, Positive loss: 0.59779, Negative loss: 0.31841
+Start evalution
+Recall@1: 0.31685
+Recall@2: 0.43704
+Recall@4: 0.56668
+Recall@8: 0.70003
+Recall@16: 0.80908
+Recall@32: 0.89551
+
+normalized_mutual_information = 0.5057893202180515
+RI = 0.9825381730406295
+F_1 = 0.15471976116306083
+
+The NN is 0.31685
+The FT is 0.18336
+The ST is 0.28300
+The DCG is 0.56807
+The E is 0.15325
+The MAP 0.16140
+
+Recall@1: 0.30030
+Recall@2: 0.41492
+Recall@4: 0.54608
+Recall@8: 0.68248
+Recall@16: 0.80182
+Recall@32: 0.88707
+
+normalized_mutual_information = 0.500511025101817
+RI = 0.9821781054024054
+F_1 = 0.15092249118786016
+
+The NN is 0.30030
+The FT is 0.17849
+The ST is 0.27488
+The DCG is 0.56204
+The E is 0.14859
+The MAP 0.15700
+
+2018-11-16 07:40:07.636691, Epoch [  7/10000], Iter [ 20/ 92], Loss: 1.10975, Positive loss: 0.73592, Negative loss: 0.37383
+2018-11-16 07:40:19.936417, Epoch [  7/10000], Iter [ 40/ 92], Loss: 1.45871, Positive loss: 0.97169, Negative loss: 0.48702
+2018-11-16 07:40:32.232754, Epoch [  7/10000], Iter [ 60/ 92], Loss: 1.13507, Positive loss: 0.72021, Negative loss: 0.41486
+2018-11-16 07:40:44.544053, Epoch [  7/10000], Iter [ 80/ 92], Loss: 1.13312, Positive loss: 0.88135, Negative loss: 0.25177
+2018-11-16 07:40:24.812548, Epoch [  7/10000], Iter [ 20/ 92], Loss: 0.90083, Positive loss: 0.56888, Negative loss: 0.33196
+2018-11-16 07:40:36.582798, Epoch [  7/10000], Iter [ 40/ 92], Loss: 1.00747, Positive loss: 0.79371, Negative loss: 0.21376
+2018-11-16 07:40:48.650243, Epoch [  7/10000], Iter [ 60/ 92], Loss: 1.34986, Positive loss: 1.03734, Negative loss: 0.31252
+2018-11-16 07:41:00.971191, Epoch [  7/10000], Iter [ 80/ 92], Loss: 1.10352, Positive loss: 0.84951, Negative loss: 0.25401
+2018-11-16 07:41:06.030683, Epoch [  8/10000], Iter [ 20/ 92], Loss: 0.84292, Positive loss: 0.61811, Negative loss: 0.22481
+2018-11-16 07:41:18.297372, Epoch [  8/10000], Iter [ 40/ 92], Loss: 1.57355, Positive loss: 1.14497, Negative loss: 0.42858
+2018-11-16 07:41:30.610985, Epoch [  8/10000], Iter [ 60/ 92], Loss: 1.23744, Positive loss: 1.04034, Negative loss: 0.19710
+2018-11-16 07:41:42.883839, Epoch [  8/10000], Iter [ 80/ 92], Loss: 0.94793, Positive loss: 0.76028, Negative loss: 0.18765
+2018-11-16 07:41:22.452013, Epoch [  8/10000], Iter [ 20/ 92], Loss: 0.91435, Positive loss: 0.54896, Negative loss: 0.36539
+2018-11-16 07:41:34.738144, Epoch [  8/10000], Iter [ 40/ 92], Loss: 1.05205, Positive loss: 0.85301, Negative loss: 0.19904
+2018-11-16 07:41:47.066048, Epoch [  8/10000], Iter [ 60/ 92], Loss: 1.12567, Positive loss: 0.91948, Negative loss: 0.20619
+2018-11-16 07:41:59.308523, Epoch [  8/10000], Iter [ 80/ 92], Loss: 0.91448, Positive loss: 0.69530, Negative loss: 0.21918
+2018-11-16 07:42:04.400985, Epoch [  9/10000], Iter [ 20/ 92], Loss: 0.96528, Positive loss: 0.80199, Negative loss: 0.16330
+2018-11-16 07:42:16.910555, Epoch [  9/10000], Iter [ 40/ 92], Loss: 1.24322, Positive loss: 0.95322, Negative loss: 0.29000
+2018-11-16 07:42:29.389466, Epoch [  9/10000], Iter [ 60/ 92], Loss: 1.17769, Positive loss: 0.85145, Negative loss: 0.32624
+2018-11-16 07:42:41.693434, Epoch [  9/10000], Iter [ 80/ 92], Loss: 1.12409, Positive loss: 0.95382, Negative loss: 0.17028
+Start evalution
+2018-11-16 07:42:21.258599, Epoch [  9/10000], Iter [ 20/ 92], Loss: 0.76566, Positive loss: 0.56031, Negative loss: 0.20535
+2018-11-16 07:42:33.522658, Epoch [  9/10000], Iter [ 40/ 92], Loss: 0.79142, Positive loss: 0.55808, Negative loss: 0.23334
+2018-11-16 07:42:45.803606, Epoch [  9/10000], Iter [ 60/ 92], Loss: 1.04338, Positive loss: 0.66332, Negative loss: 0.38007
+2018-11-16 07:42:58.105269, Epoch [  9/10000], Iter [ 80/ 92], Loss: 1.00228, Positive loss: 0.72456, Negative loss: 0.27772
+Start evalution
+Recall@1: 0.30976
+Recall@2: 0.43062
+Recall@4: 0.56009
+Recall@8: 0.70054
+Recall@16: 0.81043
+Recall@32: 0.89095
+
+normalized_mutual_information = 0.5113002750368121
+RI = 0.9822072322922475
+F_1 = 0.1595700858589802
+
+The NN is 0.30976
+The FT is 0.18170
+The ST is 0.28090
+The DCG is 0.56699
+The E is 0.15116
+The MAP 0.15960
+
+Recall@1: 0.31685
+Recall@2: 0.44007
+Recall@4: 0.57259
+Recall@8: 0.69953
+Recall@16: 0.81094
+Recall@32: 0.88572
+
+normalized_mutual_information = 0.5095575513926243
+RI = 0.9818780015373982
+F_1 = 0.1550612979267933
+
+The NN is 0.31685
+The FT is 0.18370
+The ST is 0.28264
+The DCG is 0.56756
+The E is 0.15387
+The MAP 0.16197
+
+2018-11-16 07:44:03.811231, Epoch [ 10/10000], Iter [ 20/ 92], Loss: 0.76708, Positive loss: 0.66585, Negative loss: 0.10123
+2018-11-16 07:44:15.680948, Epoch [ 10/10000], Iter [ 40/ 92], Loss: 0.91211, Positive loss: 0.65419, Negative loss: 0.25793
+2018-11-16 07:44:27.963465, Epoch [ 10/10000], Iter [ 60/ 92], Loss: 0.77029, Positive loss: 0.44520, Negative loss: 0.32509
+2018-11-16 07:44:40.291731, Epoch [ 10/10000], Iter [ 80/ 92], Loss: 1.11883, Positive loss: 0.96562, Negative loss: 0.15322
+2018-11-16 07:44:21.711715, Epoch [ 10/10000], Iter [ 20/ 92], Loss: 0.70916, Positive loss: 0.60398, Negative loss: 0.10518
+2018-11-16 07:44:33.409751, Epoch [ 10/10000], Iter [ 40/ 92], Loss: 0.92631, Positive loss: 0.71779, Negative loss: 0.20852
+2018-11-16 07:44:45.617566, Epoch [ 10/10000], Iter [ 60/ 92], Loss: 0.90379, Positive loss: 0.63921, Negative loss: 0.26458
+2018-11-16 07:44:57.908086, Epoch [ 10/10000], Iter [ 80/ 92], Loss: 0.80916, Positive loss: 0.62073, Negative loss: 0.18843
+2018-11-16 07:45:01.770688, Epoch [ 11/10000], Iter [ 20/ 92], Loss: 0.96054, Positive loss: 0.57938, Negative loss: 0.38116
+2018-11-16 07:45:14.029109, Epoch [ 11/10000], Iter [ 40/ 92], Loss: 1.08214, Positive loss: 0.97510, Negative loss: 0.10704
+2018-11-16 07:45:26.319941, Epoch [ 11/10000], Iter [ 60/ 92], Loss: 0.62799, Positive loss: 0.42601, Negative loss: 0.20197
+2018-11-16 07:45:38.833781, Epoch [ 11/10000], Iter [ 80/ 92], Loss: 1.07988, Positive loss: 0.90462, Negative loss: 0.17525
+2018-11-16 07:45:19.185257, Epoch [ 11/10000], Iter [ 20/ 92], Loss: 0.69143, Positive loss: 0.49044, Negative loss: 0.20099
+2018-11-16 07:45:31.479155, Epoch [ 11/10000], Iter [ 40/ 92], Loss: 0.90473, Positive loss: 0.51648, Negative loss: 0.38824
+2018-11-16 07:45:43.785742, Epoch [ 11/10000], Iter [ 60/ 92], Loss: 0.64536, Positive loss: 0.49716, Negative loss: 0.14820
+2018-11-16 07:45:56.346716, Epoch [ 11/10000], Iter [ 80/ 92], Loss: 0.65328, Positive loss: 0.39274, Negative loss: 0.26053
+2018-11-16 07:46:00.147590, Epoch [ 12/10000], Iter [ 20/ 92], Loss: 0.69245, Positive loss: 0.56369, Negative loss: 0.12876
+2018-11-16 07:46:12.437341, Epoch [ 12/10000], Iter [ 40/ 92], Loss: 1.04119, Positive loss: 0.80235, Negative loss: 0.23883
+2018-11-16 07:46:24.713299, Epoch [ 12/10000], Iter [ 60/ 92], Loss: 0.59814, Positive loss: 0.36939, Negative loss: 0.22875
+2018-11-16 07:46:36.993485, Epoch [ 12/10000], Iter [ 80/ 92], Loss: 0.83066, Positive loss: 0.69474, Negative loss: 0.13592
+Start evalution
+2018-11-16 07:46:17.573669, Epoch [ 12/10000], Iter [ 20/ 92], Loss: 0.65932, Positive loss: 0.46143, Negative loss: 0.19789
+2018-11-16 07:46:29.923790, Epoch [ 12/10000], Iter [ 40/ 92], Loss: 0.65776, Positive loss: 0.55004, Negative loss: 0.10772
+2018-11-16 07:46:42.116891, Epoch [ 12/10000], Iter [ 60/ 92], Loss: 0.59425, Positive loss: 0.48294, Negative loss: 0.11131
+2018-11-16 07:46:54.441776, Epoch [ 12/10000], Iter [ 80/ 92], Loss: 0.61905, Positive loss: 0.39280, Negative loss: 0.22625
+Start evalution
+Recall@1: 0.31296
+Recall@2: 0.43332
+Recall@4: 0.56077
+Recall@8: 0.69733
+Recall@16: 0.81128
+Recall@32: 0.89551
+
+normalized_mutual_information = 0.5059103905819095
+RI = 0.9822246742262821
+F_1 = 0.15920322892878616
+
+The NN is 0.31296
+The FT is 0.18385
+The ST is 0.28419
+The DCG is 0.56731
+The E is 0.15237
+The MAP 0.16298
+
+Recall@1: 0.31685
+Recall@2: 0.44294
+Recall@4: 0.56853
+Recall@8: 0.69548
+Recall@16: 0.80486
+Recall@32: 0.88454
+
+normalized_mutual_information = 0.5096386122419398
+RI = 0.981852066635484
+F_1 = 0.15843478904436914
+
+The NN is 0.31685
+The FT is 0.18934
+The ST is 0.28931
+The DCG is 0.57086
+The E is 0.15862
+The MAP 0.16780
+
+2018-11-16 07:47:57.877286, Epoch [ 13/10000], Iter [ 20/ 92], Loss: 0.56077, Positive loss: 0.50729, Negative loss: 0.05348
+2018-11-16 07:48:09.974644, Epoch [ 13/10000], Iter [ 40/ 92], Loss: 0.88829, Positive loss: 0.82613, Negative loss: 0.06216
+2018-11-16 07:48:22.455847, Epoch [ 13/10000], Iter [ 60/ 92], Loss: 0.63894, Positive loss: 0.25400, Negative loss: 0.38494
+2018-11-16 07:48:34.773997, Epoch [ 13/10000], Iter [ 80/ 92], Loss: 0.61905, Positive loss: 0.49024, Negative loss: 0.12881
+2018-11-16 07:48:16.400813, Epoch [ 13/10000], Iter [ 20/ 92], Loss: 0.42907, Positive loss: 0.37857, Negative loss: 0.05050
+2018-11-16 07:48:28.122509, Epoch [ 13/10000], Iter [ 40/ 92], Loss: 0.53952, Positive loss: 0.42520, Negative loss: 0.11432
+2018-11-16 07:48:40.328580, Epoch [ 13/10000], Iter [ 60/ 92], Loss: 0.74064, Positive loss: 0.62031, Negative loss: 0.12033
+2018-11-16 07:48:52.603239, Epoch [ 13/10000], Iter [ 80/ 92], Loss: 0.56804, Positive loss: 0.49269, Negative loss: 0.07535
+2018-11-16 07:48:56.454531, Epoch [ 14/10000], Iter [ 20/ 92], Loss: 0.57249, Positive loss: 0.38524, Negative loss: 0.18726
+2018-11-16 07:49:08.719310, Epoch [ 14/10000], Iter [ 40/ 92], Loss: 0.79127, Positive loss: 0.62243, Negative loss: 0.16884
+2018-11-16 07:49:21.067575, Epoch [ 14/10000], Iter [ 60/ 92], Loss: 0.61454, Positive loss: 0.28532, Negative loss: 0.32922
+2018-11-16 07:49:33.399274, Epoch [ 14/10000], Iter [ 80/ 92], Loss: 0.43516, Positive loss: 0.38849, Negative loss: 0.04667
+2018-11-16 07:49:14.127879, Epoch [ 14/10000], Iter [ 20/ 92], Loss: 0.40312, Positive loss: 0.32179, Negative loss: 0.08134
+2018-11-16 07:49:26.417891, Epoch [ 14/10000], Iter [ 40/ 92], Loss: 0.54084, Positive loss: 0.44961, Negative loss: 0.09123
+2018-11-16 07:49:38.740016, Epoch [ 14/10000], Iter [ 60/ 92], Loss: 0.75558, Positive loss: 0.55503, Negative loss: 0.20056
+2018-11-16 07:49:51.060160, Epoch [ 14/10000], Iter [ 80/ 92], Loss: 0.51672, Positive loss: 0.32717, Negative loss: 0.18955
+2018-11-16 07:49:55.038038, Epoch [ 15/10000], Iter [ 20/ 92], Loss: 0.40524, Positive loss: 0.29448, Negative loss: 0.11076
+2018-11-16 07:50:07.333648, Epoch [ 15/10000], Iter [ 40/ 92], Loss: 0.57914, Positive loss: 0.47582, Negative loss: 0.10332
+2018-11-16 07:50:19.623497, Epoch [ 15/10000], Iter [ 60/ 92], Loss: 0.42722, Positive loss: 0.28866, Negative loss: 0.13857
+2018-11-16 07:50:31.903684, Epoch [ 15/10000], Iter [ 80/ 92], Loss: 0.38793, Positive loss: 0.34737, Negative loss: 0.04055
+Start evalution
+2018-11-16 07:50:12.594296, Epoch [ 15/10000], Iter [ 20/ 92], Loss: 0.41481, Positive loss: 0.27279, Negative loss: 0.14202
+2018-11-16 07:50:25.039849, Epoch [ 15/10000], Iter [ 40/ 92], Loss: 0.62544, Positive loss: 0.48905, Negative loss: 0.13639
+2018-11-16 07:50:37.314665, Epoch [ 15/10000], Iter [ 60/ 92], Loss: 0.66931, Positive loss: 0.49703, Negative loss: 0.17229
+2018-11-16 07:50:49.537026, Epoch [ 15/10000], Iter [ 80/ 92], Loss: 0.39422, Positive loss: 0.32221, Negative loss: 0.07201
+Start evalution
+Recall@1: 0.32343
+Recall@2: 0.44716
+Recall@4: 0.58660
+Recall@8: 0.70932
+Recall@16: 0.81533
+Recall@32: 0.89635
+
+normalized_mutual_information = 0.5190178746526946
+RI = 0.9825794408845546
+F_1 = 0.16616420528798542
+
+The NN is 0.32343
+The FT is 0.19043
+The ST is 0.29374
+The DCG is 0.57457
+The E is 0.15946
+The MAP 0.17008
+
+Recall@1: 0.32799
+Recall@2: 0.44497
+Recall@4: 0.56904
+Recall@8: 0.69750
+Recall@16: 0.80908
+Recall@32: 0.89348
+
+normalized_mutual_information = 0.5166959346079509
+RI = 0.982239494170233
+F_1 = 0.16712152275661502
+
+The NN is 0.32799
+The FT is 0.19212
+The ST is 0.29289
+The DCG is 0.57498
+The E is 0.16146
+The MAP 0.17266
+
+2018-11-16 07:51:53.052975, Epoch [ 16/10000], Iter [ 20/ 92], Loss: 0.37196, Positive loss: 0.32864, Negative loss: 0.04332
+2018-11-16 07:52:05.111114, Epoch [ 16/10000], Iter [ 40/ 92], Loss: 0.52516, Positive loss: 0.33624, Negative loss: 0.18892
+2018-11-16 07:52:17.528005, Epoch [ 16/10000], Iter [ 60/ 92], Loss: 0.49070, Positive loss: 0.22294, Negative loss: 0.26776
+2018-11-16 07:52:29.883318, Epoch [ 16/10000], Iter [ 80/ 92], Loss: 0.44320, Positive loss: 0.40286, Negative loss: 0.04033
+2018-11-16 07:52:11.348870, Epoch [ 16/10000], Iter [ 20/ 92], Loss: 0.44477, Positive loss: 0.31682, Negative loss: 0.12796
+2018-11-16 07:52:22.998333, Epoch [ 16/10000], Iter [ 40/ 92], Loss: 0.60298, Positive loss: 0.47363, Negative loss: 0.12935
+2018-11-16 07:52:35.237926, Epoch [ 16/10000], Iter [ 60/ 92], Loss: 0.54930, Positive loss: 0.44881, Negative loss: 0.10049
+2018-11-16 07:52:47.594140, Epoch [ 16/10000], Iter [ 80/ 92], Loss: 0.31536, Positive loss: 0.25226, Negative loss: 0.06310
+2018-11-16 07:52:51.375749, Epoch [ 17/10000], Iter [ 20/ 92], Loss: 0.48199, Positive loss: 0.42692, Negative loss: 0.05506
+2018-11-16 07:53:03.701458, Epoch [ 17/10000], Iter [ 40/ 92], Loss: 0.44562, Positive loss: 0.30271, Negative loss: 0.14291
+2018-11-16 07:53:15.989326, Epoch [ 17/10000], Iter [ 60/ 92], Loss: 0.43451, Positive loss: 0.37919, Negative loss: 0.05532
+2018-11-16 07:53:28.250553, Epoch [ 17/10000], Iter [ 80/ 92], Loss: 0.37628, Positive loss: 0.28040, Negative loss: 0.09589
+2018-11-16 07:53:08.827421, Epoch [ 17/10000], Iter [ 20/ 92], Loss: 0.40377, Positive loss: 0.28601, Negative loss: 0.11777
+2018-11-16 07:53:21.315032, Epoch [ 17/10000], Iter [ 40/ 92], Loss: 0.53246, Positive loss: 0.39471, Negative loss: 0.13775
+2018-11-16 07:53:33.665481, Epoch [ 17/10000], Iter [ 60/ 92], Loss: 0.43093, Positive loss: 0.29829, Negative loss: 0.13263
+2018-11-16 07:53:45.880307, Epoch [ 17/10000], Iter [ 80/ 92], Loss: 0.40019, Positive loss: 0.27721, Negative loss: 0.12298
+2018-11-16 07:53:49.761517, Epoch [ 18/10000], Iter [ 20/ 92], Loss: 0.47714, Positive loss: 0.30969, Negative loss: 0.16745
+2018-11-16 07:54:02.215885, Epoch [ 18/10000], Iter [ 40/ 92], Loss: 0.47492, Positive loss: 0.28757, Negative loss: 0.18735
+2018-11-16 07:54:14.751618, Epoch [ 18/10000], Iter [ 60/ 92], Loss: 0.46717, Positive loss: 0.34310, Negative loss: 0.12407
+2018-11-16 07:54:27.012953, Epoch [ 18/10000], Iter [ 80/ 92], Loss: 0.49982, Positive loss: 0.42786, Negative loss: 0.07196
+Start evalution
+2018-11-16 07:54:06.973691, Epoch [ 18/10000], Iter [ 20/ 92], Loss: 0.47126, Positive loss: 0.22673, Negative loss: 0.24453
+2018-11-16 07:54:19.267914, Epoch [ 18/10000], Iter [ 40/ 92], Loss: 0.36621, Positive loss: 0.29630, Negative loss: 0.06990
+2018-11-16 07:54:31.548798, Epoch [ 18/10000], Iter [ 60/ 92], Loss: 0.44773, Positive loss: 0.29932, Negative loss: 0.14841
+2018-11-16 07:54:43.847425, Epoch [ 18/10000], Iter [ 80/ 92], Loss: 0.44283, Positive loss: 0.26673, Negative loss: 0.17610
+Start evalution
+Recall@1: 0.32478
+Recall@2: 0.44480
+Recall@4: 0.58373
+Recall@8: 0.71236
+Recall@16: 0.81482
+Recall@32: 0.90007
+
+normalized_mutual_information = 0.5267705608939661
+RI = 0.9817958078482547
+F_1 = 0.1695473208226181
+
+The NN is 0.32478
+The FT is 0.19890
+The ST is 0.30341
+The DCG is 0.57957
+The E is 0.16638
+The MAP 0.17759
+
+Recall@1: 0.32731
+Recall@2: 0.45054
+Recall@4: 0.57698
+Recall@8: 0.70510
+Recall@16: 0.81128
+Recall@32: 0.89213
+
+normalized_mutual_information = 0.5216207796400837
+RI = 0.9822354471855388
+F_1 = 0.17129774889518776
+
+The NN is 0.32731
+The FT is 0.19639
+The ST is 0.30141
+The DCG is 0.57919
+The E is 0.16448
+The MAP 0.17603
+
+2018-11-16 07:55:49.238742, Epoch [ 19/10000], Iter [ 20/ 92], Loss: 0.23560, Positive loss: 0.18515, Negative loss: 0.05045
+2018-11-16 07:56:01.240397, Epoch [ 19/10000], Iter [ 40/ 92], Loss: 0.53214, Positive loss: 0.36899, Negative loss: 0.16316
+2018-11-16 07:56:13.510307, Epoch [ 19/10000], Iter [ 60/ 92], Loss: 0.34846, Positive loss: 0.31020, Negative loss: 0.03826
+2018-11-16 07:56:26.011712, Epoch [ 19/10000], Iter [ 80/ 92], Loss: 0.48322, Positive loss: 0.42009, Negative loss: 0.06313
+2018-11-16 07:56:06.764850, Epoch [ 19/10000], Iter [ 20/ 92], Loss: 0.43099, Positive loss: 0.28801, Negative loss: 0.14297
+2018-11-16 07:56:18.406232, Epoch [ 19/10000], Iter [ 40/ 92], Loss: 0.36147, Positive loss: 0.28659, Negative loss: 0.07488
+2018-11-16 07:56:30.551348, Epoch [ 19/10000], Iter [ 60/ 92], Loss: 0.42728, Positive loss: 0.39200, Negative loss: 0.03527
+2018-11-16 07:56:42.830757, Epoch [ 19/10000], Iter [ 80/ 92], Loss: 0.39264, Positive loss: 0.29100, Negative loss: 0.10163
+2018-11-16 07:56:47.334412, Epoch [ 20/10000], Iter [ 20/ 92], Loss: 0.29233, Positive loss: 0.23141, Negative loss: 0.06093
+2018-11-16 07:56:59.628536, Epoch [ 20/10000], Iter [ 40/ 92], Loss: 0.35849, Positive loss: 0.29097, Negative loss: 0.06752
+2018-11-16 07:57:11.919529, Epoch [ 20/10000], Iter [ 60/ 92], Loss: 0.36064, Positive loss: 0.22279, Negative loss: 0.13785
+2018-11-16 07:57:24.179134, Epoch [ 20/10000], Iter [ 80/ 92], Loss: 0.44778, Positive loss: 0.36409, Negative loss: 0.08368
+2018-11-16 07:57:04.152289, Epoch [ 20/10000], Iter [ 20/ 92], Loss: 0.40317, Positive loss: 0.28322, Negative loss: 0.11995
+2018-11-16 07:57:16.421885, Epoch [ 20/10000], Iter [ 40/ 92], Loss: 0.52837, Positive loss: 0.43501, Negative loss: 0.09336
+2018-11-16 07:57:28.932442, Epoch [ 20/10000], Iter [ 60/ 92], Loss: 0.36479, Positive loss: 0.30716, Negative loss: 0.05763
+2018-11-16 07:57:41.215420, Epoch [ 20/10000], Iter [ 80/ 92], Loss: 0.33675, Positive loss: 0.29466, Negative loss: 0.04209
+2018-11-16 07:57:45.700074, Epoch [ 21/10000], Iter [ 20/ 92], Loss: 0.35034, Positive loss: 0.29748, Negative loss: 0.05285
+2018-11-16 07:57:58.034458, Epoch [ 21/10000], Iter [ 40/ 92], Loss: 0.37383, Positive loss: 0.33740, Negative loss: 0.03643
+2018-11-16 07:58:10.668462, Epoch [ 21/10000], Iter [ 60/ 92], Loss: 0.34916, Positive loss: 0.29551, Negative loss: 0.05365
+2018-11-16 07:58:22.978653, Epoch [ 21/10000], Iter [ 80/ 92], Loss: 0.32984, Positive loss: 0.25355, Negative loss: 0.07628
+Start evalution
+2018-11-16 07:58:02.492222, Epoch [ 21/10000], Iter [ 20/ 92], Loss: 0.38117, Positive loss: 0.31371, Negative loss: 0.06745
+2018-11-16 07:58:14.842499, Epoch [ 21/10000], Iter [ 40/ 92], Loss: 0.35377, Positive loss: 0.31190, Negative loss: 0.04187
+2018-11-16 07:58:27.077982, Epoch [ 21/10000], Iter [ 60/ 92], Loss: 0.45972, Positive loss: 0.41446, Negative loss: 0.04526
+2018-11-16 07:58:39.361633, Epoch [ 21/10000], Iter [ 80/ 92], Loss: 0.28338, Positive loss: 0.23188, Negative loss: 0.05150
+Start evalution
+Recall@1: 0.32714
+Recall@2: 0.45611
+Recall@4: 0.57816
+Recall@8: 0.70493
+Recall@16: 0.81634
+Recall@32: 0.89196
+
+normalized_mutual_information = 0.5207596628923217
+RI = 0.9818587356102619
+F_1 = 0.16644885195496345
+
+The NN is 0.32714
+The FT is 0.19780
+The ST is 0.30062
+The DCG is 0.57987
+The E is 0.16566
+The MAP 0.17782
+
+Recall@1: 0.34048
+Recall@2: 0.45645
+Recall@4: 0.58204
+Recall@8: 0.70138
+Recall@16: 0.80756
+Recall@32: 0.89500
+
+normalized_mutual_information = 0.5280519099919722
+RI = 0.9820946007182201
+F_1 = 0.17039437371088417
+
+The NN is 0.34048
+The FT is 0.20052
+The ST is 0.30613
+The DCG is 0.58247
+The E is 0.16833
+The MAP 0.17986
+
+2018-11-16 07:59:44.226035, Epoch [ 22/10000], Iter [ 20/ 92], Loss: 0.27914, Positive loss: 0.18102, Negative loss: 0.09813
+2018-11-16 07:59:56.359711, Epoch [ 22/10000], Iter [ 40/ 92], Loss: 0.41604, Positive loss: 0.38630, Negative loss: 0.02974
+2018-11-16 08:00:08.662114, Epoch [ 22/10000], Iter [ 60/ 92], Loss: 0.29880, Positive loss: 0.26090, Negative loss: 0.03790
+2018-11-16 08:00:20.916783, Epoch [ 22/10000], Iter [ 80/ 92], Loss: 0.35111, Positive loss: 0.27296, Negative loss: 0.07815
+2018-11-16 08:00:02.394550, Epoch [ 22/10000], Iter [ 20/ 92], Loss: 0.28643, Positive loss: 0.27213, Negative loss: 0.01429
+2018-11-16 08:00:14.003092, Epoch [ 22/10000], Iter [ 40/ 92], Loss: 0.36573, Positive loss: 0.30048, Negative loss: 0.06525
+2018-11-16 08:00:26.069259, Epoch [ 22/10000], Iter [ 60/ 92], Loss: 0.42559, Positive loss: 0.33746, Negative loss: 0.08813
+2018-11-16 08:00:38.369618, Epoch [ 22/10000], Iter [ 80/ 92], Loss: 0.27635, Positive loss: 0.21886, Negative loss: 0.05749
+2018-11-16 08:00:42.450438, Epoch [ 23/10000], Iter [ 20/ 92], Loss: 0.22437, Positive loss: 0.19109, Negative loss: 0.03328
+2018-11-16 08:00:54.708400, Epoch [ 23/10000], Iter [ 40/ 92], Loss: 0.48610, Positive loss: 0.38152, Negative loss: 0.10458
+2018-11-16 08:01:07.235061, Epoch [ 23/10000], Iter [ 60/ 92], Loss: 0.27152, Positive loss: 0.23214, Negative loss: 0.03938
+2018-11-16 08:01:19.502967, Epoch [ 23/10000], Iter [ 80/ 92], Loss: 0.25245, Positive loss: 0.21896, Negative loss: 0.03349
+2018-11-16 08:00:59.825468, Epoch [ 23/10000], Iter [ 20/ 92], Loss: 0.23635, Positive loss: 0.20336, Negative loss: 0.03299
+2018-11-16 08:01:12.261298, Epoch [ 23/10000], Iter [ 40/ 92], Loss: 0.28195, Positive loss: 0.22627, Negative loss: 0.05569
+2018-11-16 08:01:24.652711, Epoch [ 23/10000], Iter [ 60/ 92], Loss: 0.33760, Positive loss: 0.28734, Negative loss: 0.05026
+2018-11-16 08:01:36.966145, Epoch [ 23/10000], Iter [ 80/ 92], Loss: 0.34926, Positive loss: 0.31941, Negative loss: 0.02985
+./run.sh: line 233: 25885 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5
+./run.sh: line 233: 25996 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+cub200_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_2.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+cub200_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_4.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+cub200_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_8.txt
+./run.sh: line 232: 10786 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 232: 11129 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+cub200_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_4.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+cub200_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_8.txt
+./run.sh: line 232: 12034 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 232: 12120 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+cub200_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_16.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+cub200_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_1.txt
+./run.sh: line 232: 14563 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 232: 14651 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+cub200_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_0.5.txt
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+cub200_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_0.5.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+cub200_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_0.25.txt
+./run.sh: line 232: 27489 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 232: 27309 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+cub200_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_0.1.txt
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+cub200_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_0.05.txt
+./run.sh: line 232: 23549 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+cub200_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_0.00001.txt
+./run.sh: line 232: 23470 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 1,3
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+cub200_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_0.01.txt
+./run.sh: line 232: 27111 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+Traing Info:
+GPU_ID = 0,2
+LOSS_TYPE = focal_contrastive_loss
+DATASET_NAME = cub200
+running code on the uranus
+==========================
+Activate virutalenv
+START >>>>>>>>>>>>>>>>>>>
+cub200_focal_contrastive_loss_margin_20_embedding_size_64_mean_10_std_0.001.txt
+./run.sh: line 232: 32048 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1
+./run.sh: line 232: 31454 Terminated              CUDA_VISIBLE_DEVICES=$GPU_ID $PYTHON main.py --dataset_name $DATASET_NAME --mode $MODE --weight_file $WEIGHT_FILE --manual_seed $MANUAL_SEED --optimizer "rmsprop" --pair_type "matrix" --train_batch_size $TRAIN_BATCH_SIZE --momentum 0.9 --learning_rate $LEARNING_RATE --learning_rate2 ${LEARNING_RATE2} --learning_rate_decay_type "fixed" --loss_type $LOSS_TYPE --margin $MARGIN --root_dir $ROOT_DIR --image_txt $IMAGE_TXT --train_test_split_txt $TRAIN_TEST_SPLIT_TXT --label_txt $LABEL_TXT --focal_decay_factor "1000000000.0" --display_step 20 --eval_step 3 --embedding_size $EMBEDDING_SIZE --mean_value $MEAN_VALUE --std_value $STD_VALUE --num_epochs_per_decay 5 > "${DATASET_NAME}_${LOSS_TYPE}_margin_${MARGIN}_embedding_size_${EMBEDDING_SIZE}_mean_${MEAN_VALUE}_std_${STD_VALUE}.txt" 2>&1

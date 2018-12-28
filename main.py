@@ -14,6 +14,7 @@ import torch.optim as optim
 from model import SiameseNetwork, ContrastiveLoss
 from dataset import CubDataset, OnlineProductDataset, CarDataset
 from loss import calculate_distance_and_similariy_label, contrastive_loss, focal_contrastive_loss, triplet_loss, focal_triplet_loss
+from loss import angular_loss
 from torch.utils.data import DataLoader
 from evaluation import  get_feature_and_label, evaluation
 from utils import get_parameter_group, configure_optimizer
@@ -223,7 +224,8 @@ def train(args):
     for epoch in range(num_epochs):
         if epoch == 0:
             feature_set, label_set, _ = get_feature_and_label(siamese_network, dataloader_eval, device)
-            rec_pre = evaluation(feature_set, label_set)
+            # distance_type: Euclidean or cosine
+            rec_pre = evaluation(feature_set, label_set, distance_type='cosine')
         siamese_network.train()
         for i, data in enumerate(dataloader, 0):
             # img_1, img_2, sim_label = data['img_1'].to(device), data['img_2'].to(device), data['sim_label'].type(torch.FloatTensor).to(device)
@@ -239,6 +241,11 @@ def train(args):
                 loss, positive_loss, negative_loss = triplet_loss(pair_dist, pair_sim_label, margin)
             elif loss_type == "focal_triplet_loss":
                 loss, positive_loss, negative_loss = focal_triplet_loss(pair_dist, pair_sim_label, margin, mean_value, std_value)
+            elif loss_type == "angular_loss":
+                center_output = (output_1 + output_2)/2.
+                pair_dist_2, _ = calculate_distance_and_similariy_label(center_output, output_2, label_1, label_2, sqrt=True, pair_type=pair_type)
+                # angle margin is 45^o
+                loss, positive_loss, negative_loss = angular_loss(pair_dist, pair_dist_2, pair_sim_label, 45)
             else:
                 print("Unknown loss function")
                 sys.exit()
@@ -255,9 +262,9 @@ def train(args):
             print("Start evalution")
             # np.save(loss_type +'.npy', log_for_loss)
             feature_set, label_set, _ = get_feature_and_label(siamese_network, dataloader_eval, device)
-            rec_pre = evaluation(feature_set, label_set)
+            # distance_type: Euclidean or cosine
+            rec_pre = evaluation(feature_set, label_set, distance_type='cosine')
             torch.save(siamese_network.module.state_dict(), os.path.join(model_dir, 'model_' + str(epoch) +'_.pth'))
-
 
 
 if __name__ == '__main__':
